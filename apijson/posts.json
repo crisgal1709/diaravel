@@ -1,0 +1,77 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "title",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+
+    {
+        "name": "body",
+        "dbType": "text:nullable",
+        "htmlType": "textarea",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "excerpt",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "slug",
+        "dbType": "string:nullable",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "published",
+        "dbType": "boolean:default,1",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "user_id",
+        "dbType": "integer:unsigned:default,0:foreign,users,id",
+        "htmlType": "text"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+
+]

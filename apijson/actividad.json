@@ -1,0 +1,61 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "nombre",
+        "dbType": "string:nullable:default,Actividad",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "estado",
+        "dbType": "boolean:default,0",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": true
+    },
+    {
+        "name": "usuarios_relacionados",
+        "dbType": "text:nullable:default,NULL",
+        "htmlType": "text",
+        "validations": ""
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "user_id",
+        "dbType": "integer:unsigned:default,0:foreign,users,id",
+        "htmlType": "text"
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+
+]
