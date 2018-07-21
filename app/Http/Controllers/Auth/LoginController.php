@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -38,7 +39,7 @@ class LoginController extends Controller
     }
 
     //Donde se redireccionara a los usuarios después del logueo
-    protected function authenticated($user, Request $request)
+    protected function authenticated($user)
     {
 
        return redirect(url('admin'));
