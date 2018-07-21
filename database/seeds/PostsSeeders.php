@@ -4,7 +4,6 @@ use App\Models\Category;
 use App\Models\Post;
 use App\Models\Tag;
 use Illuminate\Database\Seeder;
-use Faker\Generator as Faker;
 
 class PostsSeeders extends Seeder
 {
@@ -15,7 +14,6 @@ class PostsSeeders extends Seeder
      */
     public function run()
     {
-        
 
     	for ($i=1; $i <= 10 ; $i++) { 
             //Create Categories
@@ -36,7 +34,7 @@ class PostsSeeders extends Seeder
     		$post = new Post;
 
     		$post->title     = "Entrada de prueba " . $i;
-    		$post->body      = $this->bodyGenerator(new Faker);
+    		$post->body      = $this->bodyGenerator();
     		$post->excerpt   = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt tenetur qui corporis officiis reiciendis aperiam distinctio minus laborum necessitatibus';
     		$post->slug      = 'entrada-de-prueba-' . $i;
     		$post->published = 1;
@@ -57,7 +55,7 @@ class PostsSeeders extends Seeder
     }
 
 
-    private function bodyGenerator(Faker $faker){
+    private function bodyGenerator(){
 
     	$numParagraphs = rand(3,9);
 

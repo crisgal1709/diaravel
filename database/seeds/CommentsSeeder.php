@@ -2,7 +2,6 @@
 
 use App\Models\Comment;
 use Illuminate\Database\Seeder;
-use Faker\Generator;
 
 class CommentsSeeder extends Seeder
 {
@@ -14,8 +13,6 @@ class CommentsSeeder extends Seeder
     public function run()
     {
         //Creo 20 comentarios
-
-        $faker = new Generator;
 
     	for ($i=1; $i <= 20 ; $i++) { 
     		$comment = new Comment;
