@@ -33,7 +33,7 @@
                                 <li><a href="{{ url('') }}">Acerca de</a></li>
                                 <li class="dropdown"><a href="{{ url('') }}">Blog</a>
                                 </li>
-                               	<li><a href="{{ url('') }}">Contacto</a></li>
+                               	<li><a href="{{ route('frontend.contact') }}">Contacto</a></li>
                              </ul>
                         </div>
                     </nav>

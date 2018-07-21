@@ -18,6 +18,7 @@ Route::get('posts', 'FrontendController@posts')->name('frontend.posts');
 Route::get('post/{post_slug}', 'FrontendController@post')->name('frontend.post');
 Route::get('category/{category}', 'FrontendController@category')->name('frontend.category');
 Route::get('tag/{tag}', 'FrontendController@tag')->name('frontend.tag');
+Route::get('contacto', 'FrontendController@contact')->name('frontend.contact');
 
 Route::post('storeComment', 'FrontendController@storeComment')->name('frontend.storeComment');
 

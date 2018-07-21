@@ -90,7 +90,7 @@ class PostPresenter{
 
 		} else {
 
-			return new HtmlString('<img src="/front/images/resource/news-8.jpg" alt=""/>');
+			return new HtmlString('<img src="/front/images/resource/news-2.jpg" alt=""/>');
 
 		}
 	}

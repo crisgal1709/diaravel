@@ -10,10 +10,18 @@ use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
+
+    private $lenghtPaginate = 5;
     
 
     public function index(Request $request){
-    	$posts = Post::Published()->simplePaginate(5);
+    	$posts = Post::Published()->simplePaginate($this->lenghtPaginate);
+
+        static::$name = "Home";
+
+        if (isset($_GET['page'])) {
+            static::$name = static::$name . ' - Página ' . $_GET['page'];
+        }
 
     	return view('front.home', [
     		'posts' => $posts
@@ -52,8 +60,6 @@ class FrontendController extends Controller
             'approved' => 1
          ];
 
-
-
          $comment = Comment::create($data);
 
          return back()->withFlash('Comentario agregado correctamente');
@@ -64,8 +70,10 @@ class FrontendController extends Controller
                         ->first();
 
         if (!is_null($cat)) {
+            static::$name = $cat->name;
+
             return view('front.home', [
-                'posts' => $cat->posts()->simplePaginate(5),
+                'posts' => $cat->posts()->simplePaginate($this->lenghtPaginate),
                 'is_category' => true,
                 'category' => $cat
             ]);
@@ -81,8 +89,11 @@ class FrontendController extends Controller
                         ->first();
 
         if (!is_null($tag)) {
+
+            static::$name = $tag->name;
+
             return view('front.home', [
-                'posts' => $tag->posts,
+                'posts' => $tag->posts()->simplePaginate($this->lenghtPaginate),
                 'is_tag' => true,
                 'tag' => $tag
             ]);
@@ -91,6 +102,13 @@ class FrontendController extends Controller
         } else {
             return abort(404);
         }
+    }
+
+    public function contact(Request $request)
+    {
+        static::$name = "Contacto";
+
+        return view('front.contact');
     }
 
 
