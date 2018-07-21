@@ -100,8 +100,6 @@ class PostController extends AppBaseController
             return redirect(route('posts.index'));
         }
 
-        
-
         return view('posts.show')->with('post', $post);
     }
 

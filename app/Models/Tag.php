@@ -2,9 +2,11 @@
 
 namespace App\Models;
 
+use App\Traits\Slugable;
 use App\Traits\UserId;
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\DB;
 
 /**
  * Class Tag
@@ -18,6 +20,7 @@ class Tag extends Model
 {
     use SoftDeletes;
     use UserId;
+    use Slugable;
 
     public $table = 'tags';
     
@@ -53,6 +56,24 @@ class Tag extends Model
 
         return $this->belongsToMany(Post::class, 'posts_tags');
 
+    }
+
+    public static function boot(){
+
+        parent::boot();
+
+        static::deleting(function($tag){
+
+           $tag->deletePivotRows();
+
+        });
+
+    }
+
+    private function deletePivotRows(){
+        DB::table('posts_tags')
+                        ->where('tag_id', '=', $this->id)
+                        ->delete();
     }
     
 }

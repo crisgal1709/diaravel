@@ -25,3 +25,5 @@ Route::resource('posts', 'PostAPIController');
 Route::resource('categories', 'CategoryAPIController');
 
 Route::resource('tags', 'TagAPIController');
+
+Route::resource('comments', 'CommentAPIController');

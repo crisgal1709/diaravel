@@ -1,6 +1,6 @@
 @extends('front.layouts.layout')
 
-
+{{-- {{ dd($posts) }} --}}
 
 @section('content')
 	<div class="sidebar-page-container">
@@ -18,12 +18,15 @@
 
                             <div class="lower-content">
                             	<div class="post-info">
-                                    Creative 
+                                 {{ $post->present()->getCategories() }}
 
-                                    /
-                                    Nov 26,2018 
-                                    / 
-                                    By Admin	
+                                 <br>
+
+                                 {{ $post->present()->getPublishedDate() }}
+
+                                 <br>
+
+                                 Por {{ $post->present()->authorName() }}
                                 </div>
 
                                 <h2>{{ $post->title }}</h2>

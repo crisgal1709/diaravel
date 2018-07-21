@@ -15,21 +15,29 @@ Route::get('/', 'FrontendController@index')->name('frontend.index');
 
 Route::get('posts', 'FrontendController@posts')->name('frontend.posts');
 
-Route::get('/{post_slug}', 'FrontendController@post')->name('frontend.post');
+Route::get('post/{post_slug}', 'FrontendController@post')->name('frontend.post');
+Route::get('category/{category}', 'FrontendController@category')->name('frontend.category');
+Route::get('tag/{tag}', 'FrontendController@tag')->name('frontend.tag');
+
+Route::post('storeComment', 'FrontendController@storeComment')->name('frontend.storeComment');
 
 
-Route::get('/admin', 'HomeController@index');
+Route::get('/admin', 'HomeController@index')->name('dashboard');
 
 //Route::resource('actividads', 'ActividadController');
 
 
 Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function(){
 	Route::resource('posts', 'PostController');	
+	Route::resource('categories', 'CategoryController');
+	Route::resource('tags', 'TagController');
+	Route::resource('comments', 'CommentController');
+	Route::get('approveComment/{comment_id}', 'CommentController@approve')->name('comments.approve');
 });
 
 
 Auth::routes();
 
-Route::resource('categories', 'CategoryController');
 
-Route::resource('tags', 'TagController');
+
+

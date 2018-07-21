@@ -1,4 +1,4 @@
-<table class="table table-responsive" id="posts-table">
+<table class="table table-responsive datatable" id="posts-table">
     <thead>
         <tr>
             <th>Title</th>
@@ -7,7 +7,7 @@
         <th>Slug</th>
         <th>Published</th>
         <th>Author</th>
-            <th colspan="3">Action</th>
+        <th>Action</th>
         </tr>
     </thead>
     <tbody>

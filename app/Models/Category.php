@@ -2,9 +2,11 @@
 
 namespace App\Models;
 
+use App\Traits\Slugable;
 use App\Traits\UserId;
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\DB;
 
 /**
  * Class Category
@@ -18,6 +20,7 @@ class Category extends Model
 {
     use SoftDeletes;
     use UserId;
+    use Slugable;
 
     public $table = 'categories';
     
@@ -52,7 +55,24 @@ class Category extends Model
     public function posts(){
 
         return $this->belongsToMany(Post::class, 'categories_posts');
+    }
 
+    public static function boot(){
+
+        parent::boot();
+
+        static::deleting(function($category){
+
+           $category->deletePivotRows();
+
+        });
+
+    }
+
+    private function deletePivotRows(){
+        DB::table('categories_posts')
+                        ->where('category_id', '=', $this->id)
+                        ->delete();
     }
 
     

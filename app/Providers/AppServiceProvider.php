@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Schema::defaultStringLength(255);
+        Schema::defaultStringLength(191);
 
         app('view')->composer(['layouts.app', 'front.layouts.header'], function($view) // composicion de vista : master blade
         {

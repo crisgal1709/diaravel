@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Presenters\PostPresenter;
 use App\Traits\HasArchives;
+use App\Traits\HasPresenter;
 use App\Traits\UserId;
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -25,6 +26,7 @@ class Post extends Model
     use SoftDeletes;
     use UserId;
     use HasArchives;
+    use HasPresenter;
 
     public $table = 'posts';
     
@@ -38,7 +40,9 @@ class Post extends Model
         'excerpt',
         'slug',
         'published',
-        'user_id'
+        'user_id',
+        'post_id',
+        'approved'
     ];
 
     /**
@@ -87,12 +91,21 @@ class Post extends Model
 
     public function scopePublished($query){
         return $query->where('published', '=', 1)
-                        ->with('archives')
-                        ->get();
+                        ->with('categories')
+                        ->with('tags')
+                        ->with('archives');
+                        
     }
 
-    public function present(){
-        return new PostPresenter($this);
+    /**
+     * Post has many Comments.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function comments()
+    {
+        // hasMany(RelatedModel, foreignKeyOnRelatedModel = post_id, localKey = id)
+        return $this->hasMany(Comment::class)->where('approved', '=', 1);
     }
 
 

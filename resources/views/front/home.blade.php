@@ -6,11 +6,35 @@
 	<!--News List Section-->
     <section class="news-list-section">
         <div class="auto-container">
+
+            @if (isset($is_tag) && $is_tag)
+                <div class="well">
+                    <h3 class="text-center">
+                        Entradas de la etiqueta : <strong>{{ $tag->name }}</strong>
+                    </h3>
+                </div>                      
+            @endif
+
+            @if (isset($is_category) && $is_category)
+                <div class="well">
+                    <h3 class="text-center">
+                        Entradas de la Categoría : <strong>{{ $category->name }}</strong>
+                    </h3>
+                </div>                      
+            @endif
+
+            @if (isset($_GET['page']))
+                <div class="well">
+                    <h3 class="text-center">
+                        Página {{ $_GET['page'] }}
+                    </h3>
+                </div>  
+            @endif
             
             <!--News Block Two-->
             @foreach ($posts as $post)
 
-            <div class="news-block-two">
+            <div class="news-block-two" id="post-{{ $post->id }}">
                 <div class="inner-box">
                     <div class="row clearfix">
                         <!--Image Column-->
@@ -29,11 +53,11 @@
                                 <div class="post-info"> 
                                 {{ $post->present()->getCategories() }}
 
-                                 /
+                                 <br>
 
                                 {{ $post->present()->getPublishedDate() }}
 
-                                / 
+                                <br>
 
                                 Por {{ $post->present()->authorName() }}
                                 </div>
@@ -53,15 +77,14 @@
 
                                     <li class="pull-right">
                                         <a href="{{ route('frontend.post', $post->slug) }}">
-                                            <span class="icon fa fa-comment-o"></span>7 Comentarios
+                                            <span class="icon fa fa-comment-o"></span>
+                                            {{ $post->comments->count() }}
                                         </a>
                                     </li>
 
-                                    {{-- <li class="pull-right">
-                                        <a href="{{ route('frontend.post', $post->slug) }}">
-                                            <span class="icon fa fa-heart-o"></span>32 Like
-                                        </a>
-                                    </li> --}}
+                                    <li class="pull-left">
+                                        {{ $post->present()->getTags() }}
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -70,25 +93,36 @@
             </div>
             @endforeach
             
-            <div class="text-center">
+            {{-- <div class="text-center">
                 <a href="#" class="theme-btn load-btn btn-style-one">Cargar más</a>
-            </div>
+            </div> --}}
             
         </div>
     </section>
     <!--End News Section-->
     
     <!--News Posts-->
-    <div class="new-posts">
+    {{ $posts->links() }}
+    {{-- <div class="new-posts">
+
         <div class="clearfix">
+
             <div class="pull-left">
-                <a href="#" class="prev"><span class="fa fa-long-arrow-left"></span> Anterior</a>
+                <a href="#" class="prev">
+                    <span class="fa fa-long-arrow-left"></span> 
+                    Anterior
+                </a>
             </div>
+
             <a href="#" class="grid-btn"><span class="fa fa fa-th"></span></a>
+
             <div class="pull-right">
-                <a href="#" class="next">Siguiente <span class="fa fa-long-arrow-right"></span></a>
+                <a href="#" class="next">
+                    Siguiente 
+                    <span class="fa fa-long-arrow-right"></span>
+                </a>
             </div>
-        </div>
+        </div> --}}
     </div>
     <!--End News Posts-->
 @endsection

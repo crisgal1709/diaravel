@@ -8,7 +8,7 @@ trait UserId {
 	public static function bootUserId(){
 
 		static::creating(function($model){
-			$model->user_id = auth()->user()->id;
+			$model->user_id = !is_null(auth()->user()) ? auth()->user()->id : 1;
 		});
 	}
 

@@ -4,11 +4,9 @@
    </div>
    <div class="inner-box">
     <ul>
-        <li><a href="#">Web Develoment</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">Creative</a></li>
-        <li><a href="#">Development</a></li>
-        <li><a href="#">Others </a></li>
+        @foreach ($categories as $category)
+          <li><a href="#">{{ $category->name }}</a></li>
+        @endforeach
     </ul>
 </div>
 </div>

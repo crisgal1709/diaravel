@@ -55,7 +55,9 @@
 
 <div class="form-group">
     <label for="">Thumbnil</label>
-    <img src="{{ $post->archives->first()->route }}" alt="Image">
+    @if ($post->archives->count() > 0)
+        <img src="{{ $post->archives->first()->route }}" alt="Image">
+    @endif
 </div>
 
 

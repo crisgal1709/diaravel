@@ -1,9 +1,8 @@
-<table class="table table-responsive" id="categories-table">
+<table class="table table-responsive datatable" id="categories-table">
     <thead>
         <tr>
             <th>Name</th>
-        
-            <th colspan="3">Action</th>
+            <th >Action</th>
         </tr>
     </thead>
     <tbody>

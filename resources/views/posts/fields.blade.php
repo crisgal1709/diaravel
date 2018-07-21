@@ -77,7 +77,7 @@
 
 
 @push('scripts')
-    <script src="https://cdn.ckeditor.com/ckeditor5/10.1.0/classic/ckeditor.js"></script>
+    <script src="/adminlte/js/ckeditor/ckeditor5.js"></script>
 
     <script>
         ClassicEditor

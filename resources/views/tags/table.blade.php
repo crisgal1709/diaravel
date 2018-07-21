@@ -1,9 +1,9 @@
-<table class="table table-responsive" id="tags-table">
+<table class="table table-responsive datatable" id="tags-table">
     <thead>
         <tr>
             <th>Name</th>
         {{-- <th>User Id</th> --}}
-            <th colspan="3">Action</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
