@@ -36,13 +36,11 @@ class FrontendController extends Controller
             return redirect()->route('dashboard');
         }
 
-    	$post = Cache::rememberForever('post-' . $slug, function() use($slug){
-            return Post::Published()
+    	$post =  Post::Published()
                     ->where('slug', '=', $slug)
                     ->with('comments')
                     ->with('comments.responses')
                     ->first();
-        });
 
         if (is_null($post)) {
             abort(404);
