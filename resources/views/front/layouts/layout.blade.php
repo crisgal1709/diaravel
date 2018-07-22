@@ -13,7 +13,7 @@
     <!--End Main Header -->
     
     <!-- Hidden Navigation Bar -->
-    {{-- @include('front.layouts.hidden-bar') --}}
+    @include('front.layouts.hidden-bar')
     <!-- End / Hidden Bar -->
 	
     @yield('content')

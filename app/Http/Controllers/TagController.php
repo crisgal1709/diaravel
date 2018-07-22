@@ -16,6 +16,8 @@ class TagController extends AppBaseController
     /** @var  TagRepository */
     private $tagRepository;
 
+    public static $name = "Tags";
+
     public function __construct(TagRepository $tagRepo)
     {
         $this->tagRepository = $tagRepo;

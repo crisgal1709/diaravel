@@ -15,6 +15,7 @@ class CategoryController extends AppBaseController
 {
     /** @var  CategoryRepository */
     private $categoryRepository;
+    public static $name = "Categories";
 
     public function __construct(CategoryRepository $categoryRepo)
     {

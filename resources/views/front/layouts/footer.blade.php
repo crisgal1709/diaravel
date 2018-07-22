@@ -46,5 +46,14 @@
 <script src="/front/js/appear.js"></script>
 <script src="/front/js/jquery.fancybox.js"></script>
 <script src="/front/js/script.js"></script>
+<script src="/js/notify.js"></script>
+<script src="/adminlte/alertifyjs/alertify.min.js"></script>
+
+<script>
+        alertify.set('notifier','position', 'top-right');
+</script>
+
+@stack('scripts')
+
 </body>
 </html>

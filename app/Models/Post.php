@@ -105,7 +105,13 @@ class Post extends Model
     public function comments()
     {
         // hasMany(RelatedModel, foreignKeyOnRelatedModel = post_id, localKey = id)
-        return $this->hasMany(Comment::class)->where('approved', '=', 1);
+        $comments = $this->hasMany(Comment::class);
+
+        if (!is_null(auth()->user()) && auth()->user()->id == 1) {
+            return $comments;
+        }
+        
+        return $comments->where('approved', '=', 1);
     }
 
 

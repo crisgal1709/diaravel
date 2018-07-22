@@ -8,21 +8,30 @@
         <div class="hidden-bar-wrapper">
             
             <div class="logo">
-            	<a href="index-2.html"><img src="/front/images/logo-2.png" alt="" /></a>
+            	{{-- <a href="index-2.html"><img src="/front/images/logo-2.png" alt="" /></a> --}}
+
+                <a href="{{ url('') }}" style="color: white; font-size: 30px; font-weight: 600">
+                    {{ strtoupper(config('app.name')) }}
+                </a>
             </div>
             <div class="content-box">
-            	<h2>About Us</h2>
-                <div class="text">We must explain to you how all seds this mistakens idea off denouncing pleasures and praising pain was born and I will give you a completed accounts off the system and expound the actually teaching of the great explorer ut of the truth, the master builder of human happiness.</div>
-                <a href="#" class="theme-btn btn-style-two">Consultation</a>
+            	<h2></h2>
+                <form method="GET" action="{{ route('frontend.search') }}">
+                    <div class="form-group" style="width: 100%; ">
+                        <input type="search" class="form-control" name="s" value="" placeholder="Buscar" required style="padding: 10px; width: 100%">
+                    </div>
+                    <button href="#" class="theme-btn btn-style-two">Buscar</button>
+                </form>
+                
             </div>
             <div class="contact-info">
-            	<h2>Contact Info</h2>
+            	{{-- <h2>Contact Info</h2>
                 <ul class="list-style-two">
                 	<li><span class="icon fa fa-map-marker"></span>Rock St 12, Newyork City, USA</li>
                     <li><span class="icon fa fa-phone"></span>(526) 236-895-4732</li>
                     <li><span class="icon fa fa-envelope-o"></span>creationdreamt@gmail.com</li>
                     <li><span class="icon fa fa-clock-o"></span>Week Days: 09.00 to 18.00 Sunday: Closed</li>
-                </ul>
+                </ul> --}}
             </div>
         </div><!-- / Hidden Bar Wrapper -->
         

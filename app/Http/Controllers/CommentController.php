@@ -17,6 +17,8 @@ class CommentController extends AppBaseController
     /** @var  CommentRepository */
     private $commentRepository;
 
+    public static $name = "Comments";
+
     public function __construct(CommentRepository $commentRepo)
     {
         $this->commentRepository = $commentRepo;
@@ -161,11 +163,17 @@ class CommentController extends AppBaseController
         $comment = Comment::find($comment_id);
         
         $status = !$comment->approved;
+        $text = $status 
+                    ? 'Aprobado'
+                    : 'Desaprobado';
 
         $comment->approved = $status;
         $comment->save();
 
         // dd($comment);
-        return back()->withFlash('Comment status updated successfully');
+
+        Flash::success('Comentario ' . $text . ' Con éxito' );
+
+        return back();
     }
 }

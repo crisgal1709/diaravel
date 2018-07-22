@@ -6,6 +6,7 @@ use App\Http\Controllers\AppBaseController;
 use App\Http\Requests\CreatePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 use App\Models\Category;
+use App\Models\Post;
 use App\Models\Tag;
 use App\Repositories\PostRepository;
 use Flash;
@@ -17,6 +18,8 @@ class PostController extends AppBaseController
 {
     /** @var  PostRepository */
     private $postRepository;
+
+    public static $name = "Posts";
 
     public function __construct(PostRepository $postRepo)
     {
@@ -184,5 +187,24 @@ class PostController extends AppBaseController
         Flash::success('Post deleted successfully.');
 
         return redirect(route('posts.index'));
+    }
+
+    public function publishe($id)
+    {
+        $post = Post::find($id);
+        
+        $status = !$post->published;
+        $text = $status 
+                    ? 'Publicado'
+                    : 'Marcado como no publicado';
+
+        $post->published = $status;
+        $post->save();
+
+        // dd($comment);
+
+        Flash::success('Comentario ' . $text . ' Con éxito' );
+
+        return back();
     }
 }

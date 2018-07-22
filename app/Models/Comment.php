@@ -31,7 +31,9 @@ class Comment extends Model
         'comment_id',
         'body',
         'name',
-        'email'
+        'email',
+        'approved',
+        'post_id',
     ];
 
     /**
@@ -63,7 +65,13 @@ class Comment extends Model
     public function responses()
     {
         // hasMany(RelatedModel, foreignKeyOnRelatedModel = comment_id, localKey = id)
-        return $this->hasMany(Comment::class, 'comment_id');
+        $responses =  $this->hasMany(Comment::class, 'comment_id');
+
+        if (!is_null(auth()->user()) && auth()->user()->id == 1) {
+            return $responses;
+        }
+
+        return $responses->where('approved', '=', 1);
     }
 
     /**
@@ -74,7 +82,13 @@ class Comment extends Model
     public function comment()
     {
         // belongsTo(RelatedModel, foreignKey = comment_id, keyOnRelatedModel = id)
-        return $this->belongsTo(Comment::class, 'comment_id');
+        $comment = $this->belongsTo(Comment::class, 'comment_id');
+
+        if (!is_null(auth()->user()) && auth()->user()->id == 1) {
+            return $comment;
+        }
+
+        return $comment->where('approved', '=', 1);
     }
 
     /**

@@ -10,6 +10,10 @@
         {{ config('app.name') }}
         @endif
 </title>
+
+<style>
+
+</style>
 <!-- Stylesheets -->
 <link href="/front/css/bootstrap.css" rel="stylesheet">
 <link href="/front/css/style.css" rel="stylesheet">
@@ -19,8 +23,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="/front/css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="/adminlte/alertifyjs/css/alertify.min.css">
+<link rel="stylesheet" href="/adminlte/alertifyjs/css/themes/semantic.css">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="/front/js/respond.js"></script><![endif]-->
+
+<style>
+	.alertify-notifier{
+		font-weight: 500!important;
+		font-size: 20px!important;
+	}
+</style>
+
+<meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 <body>

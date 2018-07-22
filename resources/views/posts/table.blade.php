@@ -24,7 +24,17 @@
             <td>
                 {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
-                    <a href="{!! route('posts.show', [$post->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+
+                    @if ($post->published)
+                           <a href="{!! route('posts.publishe', [$post->id]) !!}" class='btn btn-warning btn-xs' title="Marcar como no publicado">
+                            <i class="fa fa-remove"></i>
+                        </a>
+                    @else 
+                     <a href="{!! route('posts.publishe', [$post->id]) !!}" class='btn btn-success btn-xs' title="Publicar">
+                        <i class="fa fa-check"></i>
+                    </a>
+                   @endif
+
                     <a href="{!! route('posts.edit', [$post->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                     {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 </div>

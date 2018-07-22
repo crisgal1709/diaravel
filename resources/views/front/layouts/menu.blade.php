@@ -30,7 +30,7 @@
                             <ul class="navigation clearfix">
                                 <li class="dropdown"><a href="{{ url('') }}">Inicio</a>
                                 </li>
-                                <li><a href="{{ url('') }}">Acerca de</a></li>
+                                <li><a href="{{ route('frontend.about') }}">Acerca de</a></li>
                                 <li class="dropdown"><a href="{{ url('') }}">Blog</a>
                                 </li>
                                	<li><a href="{{ route('frontend.contact') }}">Contacto</a></li>
@@ -43,7 +43,7 @@
                     <div class="btn-outer">
                         <!-- Hidden Nav Toggler -->
                         <div class="nav-toggler">
-                            <button class="hidden-bar-opener"><span class="icon flaticon-menu"></span></button>
+                            <button class="hidden-bar-opener"><span class="icon flaticon-search"></span></button>
                         </div>
                         <!-- / Hidden Nav Toggler -->
                     </div>

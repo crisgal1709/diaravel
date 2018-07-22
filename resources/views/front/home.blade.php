@@ -23,10 +23,26 @@
                 </div>                      
             @endif
 
+            @if (isset($is_search) && $is_search)
+                <div class="well">
+                    <h3 class="text-center">
+                        Resultados para la búsqueda : <strong>{{ $searchTerm }}</strong>
+                    </h3>
+                </div>                      
+            @endif
+
             @if (isset($_GET['page']))
                 <div class="well">
                     <h3 class="text-center">
                         Página {{ $_GET['page'] }}
+                    </h3>
+                </div>  
+            @endif
+
+            @if ($posts->count() < 1)
+                <div class="well">
+                    <h3 class="text-center">
+                        No hay artículos disponibles
                     </h3>
                 </div>  
             @endif

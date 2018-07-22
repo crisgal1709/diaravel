@@ -3,9 +3,7 @@
     <thead>
         <tr>
             <th>Type</th>
-            <th>Body</th>
-            <th>Name</th>
-            <th>Email</th>
+            <th>Entrada</th>
             <th>Status</th>
             <th>Action</th>
         </tr>
@@ -21,9 +19,9 @@
                     {{ 'Respuesta' }}
                 @endif
             </td>
-            <td>{!! substr($comment->body, 0, 20) . '...' !!}</td>
-            <td>{!! $comment->name !!}</td>
-            <td>{!! $comment->email !!}</td>
+            <td>
+                {{ $comment->present()->post() }}
+            </td>
             <td>
                 {{ $comment->present()->approved() }}
             </td>

@@ -34,11 +34,15 @@ class FrontendController extends Controller
             return redirect()->route('dashboard');
         }
 
-    	$post = Post::where('slug', '=', $slug)
-    				->with('categories')
-    				->with('tags')
-    				->with('archives')
+    	$post = Post::Published()
+                    ->where('slug', '=', $slug)
+                    ->with('comments')
+                    ->with('comments.responses')
     				->first();
+
+        if (is_null($post)) {
+            abort(404);
+        }
 
     	static::$name = $post->title;
 
@@ -50,19 +54,27 @@ class FrontendController extends Controller
     	]);
     }
 
-    public function storeComment(Request $request){
+    public function storeComment(Request $request)
+    {
         $data = [
             'name'       => $request->name,
             'email'      => $request->email,
             'body'       => $request->body,
             'post_id'    => $request->post_id,
             'comment_id' => $request->comment_id,
-            'approved' => 1
+            'approved'   => 0
          ];
 
          $comment = Comment::create($data);
 
-         return back()->withFlash('Comentario agregado correctamente');
+         if (request()->ajax()) {
+             return response()->json([
+                'error' => 0,
+                'message' => 'Comentario enviado, se requiere aprobación'
+             ]);
+         }
+
+         //return back()->withFlash('Comentario agregado correctamente');
     }
 
     public function category($category){
@@ -73,7 +85,9 @@ class FrontendController extends Controller
             static::$name = $cat->name;
 
             return view('front.home', [
-                'posts' => $cat->posts()->simplePaginate($this->lenghtPaginate),
+                'posts' => $cat->posts()
+                                ->Published()
+                                ->simplePaginate($this->lenghtPaginate),
                 'is_category' => true,
                 'category' => $cat
             ]);
@@ -93,7 +107,9 @@ class FrontendController extends Controller
             static::$name = $tag->name;
 
             return view('front.home', [
-                'posts' => $tag->posts()->simplePaginate($this->lenghtPaginate),
+                'posts' => $tag->posts()
+                                ->Published()
+                                ->simplePaginate($this->lenghtPaginate),
                 'is_tag' => true,
                 'tag' => $tag
             ]);
@@ -109,6 +125,28 @@ class FrontendController extends Controller
         static::$name = "Contacto";
 
         return view('front.contact');
+    }
+
+    public function about(Request $request)
+    {   
+        static::$name = "Acerca de";
+        return view('front.about');
+    }
+
+    public function search(Request $request)
+    {
+        $posts = Post::Published()
+                            ->where('title', 'LIKE', '%'.$request->s.'%')
+                            ->simplePaginate($this->lenghtPaginate);
+
+        static::$name = "Búsqueda: " . $request->s;
+
+        return view('front.home', [
+            'posts' => $posts,
+            'is_search' => true,
+            'searchTerm' => $request->s,
+        ]);
+
     }
 
 

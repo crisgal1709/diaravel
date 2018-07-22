@@ -3,7 +3,7 @@
     
     <!--Comment Box-->
     @foreach ($post->comments as $comment)
-        <div class="comment-box">
+        <div class="comment-box" id="comment-{{ $comment->id }}">
             <div class="comment">
                 <div class="author-thumb">
                     <img src="/front/images/resource/author-1.jpg" alt="">
@@ -20,7 +20,7 @@
                         {{ $comment->body }}   
                     </div>
 
-                    <a class="comment-reply" href="#">
+                    <a class="comment-reply" href="#" id="reply-{{ $comment->id }}" data-id="{{ $comment->id }}"  data-name="{{ $comment->name }}">
                         <span class="icon fa fa-mail-reply"></span> Responder
                     </a>
                 </div>
@@ -30,7 +30,7 @@
         @if ($comment->responses->count() > 0)
             @foreach ($comment->responses as $response)
                 <!--Comment Box-->
-                <div class="comment-box" style="margin-left: 50px">
+                <div class="comment-box" style="margin-left: 70px" id="response-{{ $response->id }}">
                     <div class="comment">
                         <div class="author-thumb">
                             <img src="/front/images/resource/author-2.jpg" alt="">

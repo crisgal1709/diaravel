@@ -32,6 +32,7 @@
 
     <link rel="stylesheet" href="/adminlte/css/select2/select2.min.css">
     <link rel="stylesheet" href="/adminlte/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="/adminlte/alertifyjs/css/alertify.min.css">
 
     <!-- Ionicons -->
     {{-- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> --}}
@@ -179,6 +180,8 @@
     <script src="/adminlte/js/select2/select2.min.js"></script>
     <script src="/adminlte/datatables.net/js/jquery.dataTables.min.js"></script>
     <script src="/adminlte/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="/adminlte/alertifyjs/alertify.min.js"></script>
+    <script src="/js/notify.js"></script>
 
      <script>
         $('.datatable').DataTable({
@@ -191,6 +194,8 @@
         });
 
         $('a').tooltip()
+
+            alertify.set('notifier','position', 'bottom-right');
     </script>
 
     @stack('scripts')

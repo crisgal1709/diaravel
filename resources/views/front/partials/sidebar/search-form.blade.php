@@ -1,7 +1,7 @@
 <div class="sidebar-widget search-box">
-	<form method="post" action="http://html.tonatheme.com/2018/Dreamt/contact.html">
+	<form method="GET" action="{{ route('frontend.search') }}">
 		<div class="form-group">
-			<input type="search" name="search-field" value="" placeholder="Buscar" required>
+			<input type="search" name="s" value="" placeholder="Buscar" required>
 			<button type="submit"><span class="icon fa fa-search"></span></button>
 		</div>
 	</form>
