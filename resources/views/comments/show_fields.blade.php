@@ -1,3 +1,5 @@
+
+
 <!-- Id Field -->
 <div class="form-group">
     {!! Form::label('id', 'Id:') !!}
@@ -6,25 +8,35 @@
 
 <!-- Comment Id Field -->
 <div class="form-group">
-    {!! Form::label('comment_id', 'Comment Id:') !!}
-    <p>{!! $comment->comment_id !!}</p>
+    {!! Form::label('typo', 'Type') !!}
+    <p>{!! $comment->present()->type() !!}</p>
+</div>
+
+<div class="form-group">
+    {!! Form::label('status', 'Status') !!}
+    <p>
+        {{ $comment->present()->resolveStatus(true) }}
+    </p>
+    <p>
+        {{ $comment->present()->status() }}
+    </p>
 </div>
 
 <!-- Body Field -->
 <div class="form-group">
-    {!! Form::label('body', 'Body:') !!}
+    {!! Form::label('body', 'content:') !!}
     <p>{!! $comment->body !!}</p>
 </div>
 
 <!-- Name Field -->
 <div class="form-group">
-    {!! Form::label('name', 'Name:') !!}
+    {!! Form::label('name', 'Name Author:') !!}
     <p>{!! $comment->name !!}</p>
 </div>
 
 <!-- Email Field -->
 <div class="form-group">
-    {!! Form::label('email', 'Email:') !!}
+    {!! Form::label('email', 'Email Author:') !!}
     <p>{!! $comment->email !!}</p>
 </div>
 
@@ -34,9 +46,4 @@
     <p>{!! $comment->created_at !!}</p>
 </div>
 
-<!-- Updated At Field -->
-<div class="form-group">
-    {!! Form::label('updated_at', 'Updated At:') !!}
-    <p>{!! $comment->updated_at !!}</p>
-</div>
 

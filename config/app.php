@@ -151,6 +151,8 @@ return [
          * Package Service Providers...
          */
 
+
+
         Collective\Html\HtmlServiceProvider::class,
         Laracasts\Flash\FlashServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
@@ -167,6 +169,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         App\Providers\GoogleDriveServiceProvider::class,
+
+        App\Cubic\CubicServiceProvider::class,
 
     ],
 

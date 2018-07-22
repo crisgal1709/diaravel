@@ -111,6 +111,30 @@ class PostPresenter{
 		}
 	}
 
+	public function status(){
+		if ($this->resolveStatus()) {
+			$a = ' <a href="'.route('posts.publishe', [$this->post->id]).'" class="btn btn-warning btn-xs" title="Marcar como no publicado">
+                      <i class="fa fa-remove"></i>
+                   </a>';
+		} else {
+			$a = '<a href="'.route('posts.publishe', [$this->post->id]) .'" class="btn btn-success btn-xs" title="Publicar">
+                     <i class="fa fa-check"></i>
+                  </a>';
+		}
+
+		return new HtmlString($a);
+	}
+
+	public function resolveStatus($letters = false){
+		if (!$letters) {
+			return $this->post->published;
+		}
+
+		return $this->post->published
+						? 'Publicado'
+						: 'No publicado';
+	}
+
 }
 
 

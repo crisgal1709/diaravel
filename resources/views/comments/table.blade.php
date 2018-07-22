@@ -13,11 +13,7 @@
     @foreach($comments as $comment)
         <tr>
             <td>
-                @if ($comment->comment_id == 0)
-                    {{ 'Comentario' }}
-                    @else 
-                    {{ 'Respuesta' }}
-                @endif
+                {{ $comment->present()->type() }}
             </td>
             <td>
                 {{ $comment->present()->post() }}
@@ -29,18 +25,15 @@
                 {!! Form::open(['route' => ['comments.destroy', $comment->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
 
-                   @if ($comment->approved)
-                           <a href="{!! route('comments.approve', [$comment->id]) !!}" class='btn btn-warning btn-xs' title="Desaprobar">
-                            <i class="fa fa-remove"></i>
-                        </a>
-                    @else 
-                     <a href="{!! route('comments.approve', [$comment->id]) !!}" class='btn btn-success btn-xs' title="Aprobar">
-                        <i class="fa fa-check"></i>
-                    </a>
-                   @endif
+                   {{ $comment->present()->status() }}
+
+                   <a href="{{ route('comments.show', $comment->id) }}" class="btn btn-default btn-xs">
+                       <i class="fa fa-eye"></i>
+                   </a>
 
 
                     <a href="{!! route('comments.edit', [$comment->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+
                     {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 </div>
                 {!! Form::close() !!}

@@ -4,8 +4,108 @@
 		"selected_items":
 		[
 			[
+				"pub",
+				"publishe"
+			],
+			[
+				"pos",
+				"post"
+			],
+			[
+				"commen",
+				"Comment"
+			],
+			[
+				"resol",
+				"resolveStatus()\tmixed"
+			],
+			[
+				"comen",
+				"comment_id"
+			],
+			[
+				"comme",
+				"comments"
+			],
+			[
+				"CommentC",
+				"CommentCreated\tCommentCreated"
+			],
+			[
+				"sho",
+				"ShouldBroadcast"
+			],
+			[
+				"noti",
+				"notify"
+			],
+			[
+				"publ",
+				"published"
+			],
+			[
+				"publi",
+				"publishe"
+			],
+			[
+				"pu",
+				"publishe"
+			],
+			[
+				"Ap",
+				"Aprobado"
+			],
+			[
+				"aut",
+				"author"
+			],
+			[
+				"comm",
+				"comment\tblade-comment"
+			],
+			[
+				"fsi",
+				"font-size\tproperty"
+			],
+			[
+				"font",
+				"font-weight\tproperty"
+			],
+			[
+				"con",
+				"content \tin front.layouts.layout"
+			],
+			[
 				"fron",
-				"frontend"
+				"front/layouts/layout.blade.php \tBlade Autocomplete"
+			],
+			[
+				"strt",
+				"strtoupper"
+			],
+			[
+				"la",
+				"front/layouts/layout.blade.php \tBlade Autocomplete"
+			],
+			[
+				"att",
+				"attr\t.attr() - single"
+			],
+			[
+				"email",
+				"emailComentador"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"Can",
+				"cancelarRespuesta"
+			],
+			[
+				"prev",
+				"preventDefault"
 			],
 			[
 				"front",
@@ -18,10 +118,6 @@
 			[
 				"categ",
 				"category"
-			],
-			[
-				"commen",
-				"comments-table"
 			],
 			[
 				"resp",
@@ -100,10 +196,6 @@
 				"sesiones"
 			],
 			[
-				"con",
-				"content-sesiones"
-			],
-			[
 				"ses",
 				"sesiones_facturas"
 			],
@@ -178,10 +270,6 @@
 			[
 				"contain",
 				"container-fluid \tBootstrap 4 Class"
-			],
-			[
-				"pub",
-				"public"
 			],
 			[
 				"desc",
@@ -368,10 +456,6 @@
 				"checked"
 			],
 			[
-				"in",
-				"inarray\t$.inArray()"
-			],
-			[
 				"chek",
 				"checked"
 			],
@@ -430,145 +514,34 @@
 			[
 				"color",
 				"colorText"
-			],
-			[
-				"texto",
-				"textoConfirmacion"
-			],
-			[
-				"rutasMenu",
-				"rutasMenusApp"
-			],
-			[
-				"borde",
-				"border-left"
-			],
-			[
-				"data_",
-				"data_recomendacionesAdvertencia"
-			],
-			[
-				"pref",
-				"prefacturas_id"
-			],
-			[
-				"valor",
-				"valorTotal"
-			],
-			[
-				"valo",
-				"valorServicios"
-			],
-			[
-				"pre",
-				"prefacturasArray"
-			],
-			[
-				"prefa",
-				"prefactura"
-			],
-			[
-				"prefac",
-				"prefacturas"
-			],
-			[
-				"num",
-				"numero_autorizacion"
-			],
-			[
-				"strto",
-				"strtolower"
-			],
-			[
-				"foreach",
-				"foreach\tforeach …"
-			],
-			[
-				"array_k",
-				"array_keys"
-			],
-			[
-				"cl",
-				"class\tAttr"
-			],
-			[
-				"STRTO",
-				"strtolower"
-			],
-			[
-				"tabl",
-				"table-citas-dia"
-			],
-			[
-				"show",
-				"showWarning"
-			],
-			[
-				"eac",
-				"each\t$.each()"
-			],
-			[
-				"ge",
-				"get\t$.get()"
-			],
-			[
-				"aut",
-				"auto"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/FrontendController.php",
+			"file": "resources/views/posts/show.blade.php",
 			"settings":
 			{
-				"buffer_size": 2681,
+				"buffer_size": 558,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/front/contact.blade.php",
+			"file": "resources/views/comments/show.blade.php",
 			"settings":
 			{
-				"buffer_size": 3562,
+				"buffer_size": 567,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Procfile",
+			"file": "resources/views/layouts/app.blade.php",
 			"settings":
 			{
-				"buffer_size": 42,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "database/seeds/CommentsSeeder.php",
-			"settings":
-			{
-				"buffer_size": 1433,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "database/seeds/PostsSeeders.php",
-			"settings":
-			{
-				"buffer_size": 1743,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/Auth/LoginController.php",
-			"settings":
-			{
-				"buffer_size": 1134,
+				"buffer_size": 8320,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -660,61 +633,105 @@
 	[
 		"/Applications/AMPPS/www/diaravel",
 		"/Applications/AMPPS/www/diaravel/app",
-		"/Applications/AMPPS/www/diaravel/app/Http",
-		"/Applications/AMPPS/www/diaravel/app/Http/Controllers",
-		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/Auth",
-		"/Applications/AMPPS/www/diaravel/app/Presenters",
-		"/Applications/AMPPS/www/diaravel/database",
-		"/Applications/AMPPS/www/diaravel/database/factories",
-		"/Applications/AMPPS/www/diaravel/database/seeds",
+		"/Applications/AMPPS/www/diaravel/app/Cubic",
+		"/Applications/AMPPS/www/diaravel/app/Events",
+		"/Applications/AMPPS/www/diaravel/app/Traits",
+		"/Applications/AMPPS/www/diaravel/config",
+		"/Applications/AMPPS/www/diaravel/public",
+		"/Applications/AMPPS/www/diaravel/public/js",
 		"/Applications/AMPPS/www/diaravel/resources",
 		"/Applications/AMPPS/www/diaravel/resources/views",
-		"/Applications/AMPPS/www/diaravel/resources/views/front",
-		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts"
+		"/Applications/AMPPS/www/diaravel/resources/views/layouts"
 	],
 	"file_history":
 	[
-		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/FrontendController.php",
-		"/Applications/AMPPS/www/diaravel/app/Models/Post.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/front/home.blade.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/vendor/pagination/simple-bootstrap-4.blade.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/front/post.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/posts/table.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/posts/show_fields.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/comments/show_fields.blade.php",
 		"/Applications/AMPPS/www/diaravel/app/Presenters/PostPresenter.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/front/contact.blade.php",
 		"/Applications/AMPPS/www/diaravel/routes/web.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/tags/table.blade.php",
+		"/Applications/AMPPS/www/diaravel/app/Models/Tag.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasEvents.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/comments/table.blade.php",
+		"/Applications/AMPPS/www/diaravel/app/Presenters/CommentPresenter.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/categories/table.blade.php",
+		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/TagController.php",
+		"/Applications/AMPPS/www/diaravel/app/Traits/Slugable.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/vendor/flash/message.blade.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Contracts/Events/Dispatcher.php",
+		"/Applications/AMPPS/www/diaravel/public/js/socket.io.js",
+		"/Applications/AMPPS/www/diaravel/.env",
+		"/Applications/AMPPS/www/diaravel/config/broadcasting.php",
+		"/Applications/AMPPS/www/diaravel/app/Cubic/Cubic.php",
+		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/PostController.php",
+		"/Applications/AMPPS/www/diaravel/app/Events/PostCreated.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Foundation/Bus/Dispatchable.php",
+		"/Applications/AMPPS/www/diaravel/app/Events/CommentCreated.php",
+		"/Applications/AMPPS/www/diaravel/app/Providers/EventServiceProvider.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts/footer.blade.php",
+		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/FrontendController.php",
+		"/Applications/AMPPS/www/diaravel/config/app.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/layouts/app.blade.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Queue/SerializesModels.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Queue/SerializesAndRestoresModelIdentifiers.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Foundation/Events/Dispatchable.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Broadcasting/BroadcastEvent.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Broadcasting/Channel.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/Broadcaster.php",
+		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/Auth/RegisterController.php",
+		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/Auth/ResetPasswordController.php",
+		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/Auth/ForgotPasswordController.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/auth/login.blade.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Contracts/Queue/ShouldQueue.php",
+		"/Applications/AMPPS/www/diaravel/vendor/mockery/mockery/tests/Mockery/Fixtures/SemiReservedWordsAsMethods.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Http/Resources/CollectsResources.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Support/helpers.php",
+		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/CategoryController.php",
+		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/CommentController.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/auth/passwords/email.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/auth/passwords/reset.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/auth/register.blade.php",
+		"/Applications/AMPPS/www/diaravel/app/Models/Post.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/front/post.blade.php",
+		"/Applications/AMPPS/www/diaravel/app/Models/Comment.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts/header.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts/layout.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/front/partials/sidebar/search-form.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts/hidden-bar.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts/menu.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/front/home.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/errors/404.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/front/partials/comment-form.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/front/partials/comments-post.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/front/about.blade.php",
+		"/Users/desarrollador/Documents/codester-7279-dreamt-minimal-portfolio-html-template/theme/about.html",
+		"/Applications/AMPPS/www/diaravel/public/js/notify.js",
+		"/Applications/AMPPS/www/diaravel/webpack.mix.js",
+		"/Applications/AMPPS/www/diaravel/resources/views/front/contact.blade.php",
+		"/Applications/AMPPS/www/diaravel/Procfile",
+		"/Applications/AMPPS/www/diaravel/database/seeds/CommentsSeeder.php",
+		"/Applications/AMPPS/www/diaravel/database/seeds/PostsSeeders.php",
+		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/Auth/LoginController.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/vendor/pagination/simple-bootstrap-4.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/contact.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/vendor/pagination/simple-default.blade.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/front/partials/comment-form.blade.php",
-		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/PostController.php",
-		"/Applications/AMPPS/www/diaravel/app/Models/Tag.php",
 		"/Applications/AMPPS/www/diaravel/app/Models/Category.php",
-		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/CommentController.php",
 		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_203703_create_categories_table.php",
 		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_203721_create_tags_table.php",
-		"/Applications/AMPPS/www/diaravel/app/Traits/Slugable.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/layouts/app.blade.php",
-		"/Applications/AMPPS/www/diaravel/app/Presenters/CommentPresenter.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/posts/index.blade.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/posts/table.blade.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/comments/table.blade.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/tags/table.blade.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/categories/table.blade.php",
 		"/Applications/AMPPS/www/diaravel/vendor/fzaninotto/faker/src/Faker/Generator.php",
-		"/Applications/AMPPS/www/diaravel/app/Models/Comment.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/front/partials/comments-post.blade.php",
 		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_21_154434_create_comments_table.php",
 		"/Applications/AMPPS/www/diaravel/app/Traits/HasPresenter.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/partials/sidebar/recent-posts.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/partials/sidebar/tags.blade.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php",
-		"/Applications/AMPPS/www/diaravel/database/seeds/PostsSeeders.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/partials/sidebar/categories.blade.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factory.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/posts/show_fields.blade.php",
-		"/Applications/AMPPS/www/diaravel/database/seeds/CommentsSeeder.php",
 		"/Applications/AMPPS/www/diaravel/database/seeds/DatabaseSeeder.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts/header.blade.php",
 		"/Applications/AMPPS/www/diaravel/app/Traits/UserId.php",
 		"/Applications/AMPPS/www/diaravel/database/migrations/2014_10_12_000000_create_users_table.php",
 		"/Applications/AMPPS/www/diaravel/app/Providers/AppServiceProvider.php",
@@ -750,58 +767,12 @@
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Contracts/View/Factory.php",
 		"/Applications/AMPPS/www/diaravel/app/Traits/Drive.php",
 		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_213521_create_archivos_table.php",
-		"/Applications/AMPPS/www/diaravel/config/app.php",
 		"/Applications/AMPPS/www/diaravel/composer.json",
 		"/Applications/AMPPS/www/diaravel/config/filesystems.php",
 		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_204433_create_posts_tags_table.php",
 		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_204448_create_categories_posts_table.php",
 		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_175634_create_posts_table.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/categories/fields.blade.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/layouts/menu.blade.php",
-		"/Applications/AMPPS/www/diaravel/apijson/categories.json",
-		"/Applications/AMPPS/www/diaravel/apijson/tags.json",
-		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/Auth/LoginController.php",
-		"/Applications/AMPPS/www/diaravel/webpack.mix.js",
-		"/Applications/AMPPS/www/hcfa/resources/views/sximo/module/index.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/sximo/module/permission.blade.php",
-		"/Applications/AMPPS/www/hcfa/app/Http/Controllers/Sximo/ModuleController.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/cotizacion/index.blade.php",
-		"/Applications/AMPPS/www/hcfa/app/Models/Sximo.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/core/users/index.blade.php",
-		"/Applications/AMPPS/www/hcfa/app/Library/SiteHelpers.php",
-		"/Applications/AMPPS/www/hcfa/app/Http/Controllers/CotizacionController.php",
-		"/Applications/AMPPS/www/hcfa/SQLS/cambio_solo_superAdmin_pueda_cotizar.txt",
-		"/Applications/AMPPS/www/hcfa/app/Http/Controllers/CompaniaController.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/templates/descripcionquirurgicaForm.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/templatespdf/descripcionquirurgica.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/paciente/complementos/modals/respuestas.blade.php",
-		"/Applications/AMPPS/www/hcfa/app/Http/Controllers/RespuestasPacienteController.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/templatespdf/respuesta.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/templatespdf/control.blade.php",
-		"/Applications/AMPPS/www/hcfa/app/Http/Controllers/ControlController.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/control/index.blade.php",
-		"/Applications/AMPPS/www/hcfa/app/Http/Controllers/DescripcionquirurgicaController.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/descripcionquirurgica/form.blade.php",
-		"/Applications/AMPPS/www/hcfa/public/js/scripts/control.js",
-		"/Applications/AMPPS/www/hcfa/resources/views/control/tabs/vitalidad.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/control/tabs/calidadpiel.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/control/tabs/irregularidades.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/control/tabs/abultamiento.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/control/tabs/pliegues.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/control/tabs/examen-general.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/control/formControl.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/control/form.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/historiaclinicapreliminar/formularios/examenFisico.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/control/formExamen.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/historiaclinicapreliminar/formularios/motivoConsulta.blade.php",
-		"/Applications/AMPPS/www/hcfa/public/js/scripts/captacion.js",
-		"/Applications/AMPPS/www/hcfa/resources/views/historiaclinicapreliminar/formularios/antecedentes.blade.php",
-		"/Applications/AMPPS/www/hcfa/public/js/scripts/definitiva.js",
-		"/Applications/AMPPS/www/hcfa/resources/views/historiaclinicapreliminar/edit.blade.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/historiaclinicapreliminar/form.blade.php",
-		"/Applications/AMPPS/www/hcfa/app/Http/Controllers/HistoriaclinicapreliminarController.php",
-		"/Applications/AMPPS/www/hcfa/app/Http/Controllers/Controller.php",
-		"/Applications/AMPPS/www/hcfa/resources/views/historiaclinicapreliminar/formularios/revisionsistemas.blade.php"
+		"/Applications/AMPPS/www/diaravel/resources/views/categories/fields.blade.php"
 	],
 	"find":
 	{
@@ -819,6 +790,73 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"creating",
+			"show",
+			"id",
+			"show",
+			"User",
+			"typo",
+			"Type",
+			"comment",
+			"Comment",
+			"comment",
+			"fucntion",
+			"name",
+			"NotifyPostCreated",
+			"name",
+			"channel",
+			"EventListener",
+			"public",
+			"InfyOm",
+			"Generator",
+			"InfyOm Laravel Generator",
+			"Generator",
+			"config",
+			"url(",
+			"Posts",
+			"comments.approve",
+			"comment",
+			"approved",
+			"Desaprobado",
+			"approved",
+			"publishe",
+			"approve",
+			"publishe",
+			"comment_id",
+			"Comment",
+			"PostController",
+			"CommentController",
+			"approve",
+			"comment_id",
+			"comment",
+			"approved",
+			"comment",
+			"return",
+			"commment",
+			"public",
+			"is_category",
+			"a",
+			"about",
+			"post",
+			"FunctionName",
+			"contact",
+			"value",
+			"attr",
+			"nombreComentador",
+			"name",
+			"nombreComentador",
+			"set",
+			"nombre",
+			"text",
+			"comment_id",
+			"response",
+			"publiceado",
+			"_token",
+			"body",
+			"textarea",
+			"required",
+			"nombre",
+			"name",
 			"faker",
 			"$faker",
 			"faker",
@@ -879,51 +917,7 @@
 			"email",
 			"comments",
 			"Response",
-			"/**!",
-			"users",
-			"glyp",
-			"$nombre",
-			"nombre",
-			"content",
-			"tags",
-			"categories",
-			"post",
-			"blog-detail.html",
-			"start",
-			"Admin",
-			"FunctionName",
-			"Models",
-			"200px",
-			"auto",
-			"element",
-			"published",
-			"archivos",
-			"guardarArchivo",
-			"archivos",
-			"guardarArchivo",
-			"string",
-			"tag",
-			"sync",
-			"tags",
-			"Category",
-			"categories",
-			"category",
-			"categories",
-			"element",
-			"categories",
-			"\">\n",
-			"cateogories",
-			"published",
-			"select2",
-			"Generator",
-			"start",
-			"sm-12",
-			"Slug",
-			"slug",
-			"Save",
-			"ckeditor",
-			"post_id",
-			"model"
+			"/**!"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -941,122 +935,29 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/FrontendController.php",
+					"file": "resources/views/posts/show.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2681,
+						"buffer_size": 558,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								458,
-								458
-							],
-							[
-								474,
-								474
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1399.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "resources/views/front/contact.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3562,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3496,
-								1524
+								201,
+								201
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 56.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Procfile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 42,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								42,
-								42
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Seti_UI/icons/Langs/Procfile.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "database/seeds/CommentsSeeder.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1433,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								244,
-								245
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1068,25 +969,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "database/seeds/PostsSeeders.php",
+					"buffer": 1,
+					"file": "resources/views/comments/show.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1743,
+						"buffer_size": 567,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								773,
-								773
+								204,
+								204
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1098,30 +999,30 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/Http/Controllers/Auth/LoginController.php",
-					"semi_transient": false,
+					"buffer": 2,
+					"file": "resources/views/layouts/app.blade.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1134,
+						"buffer_size": 8320,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1078,
-								1078
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 296.0,
+						"translation.y": 2919.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1187,12 +1088,112 @@
 		"selected_items":
 		[
 			[
-				"fronten",
+				"postp",
+				"app/Presenters/PostPresenter.php"
+			],
+			[
+				"modelta",
+				"app/Models/Tag.php"
+			],
+			[
+				"tagcon",
+				"app/Http/Controllers/TagController.php"
+			],
+			[
+				"we",
+				"routes/web.php"
+			],
+			[
+				"commenpr",
+				"app/Presenters/CommentPresenter.php"
+			],
+			[
+				"commentsshow",
+				"resources/views/comments/show_fields.blade.php"
+			],
+			[
+				"COMMENTSSHOW",
+				"resources/views/comments/show_fields.blade.php"
+			],
+			[
+				"COMMENPR",
+				"app/Presenters/CommentPresenter.php"
+			],
+			[
+				"fron",
 				"app/Http/Controllers/FrontendController.php"
+			],
+			[
+				"postcon",
+				"app/Http/Controllers/PostController.php"
+			],
+			[
+				"frontla",
+				"resources/views/front/layouts/footer.blade.php"
+			],
+			[
+				"appbla",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"configapp",
+				"config/app.php"
+			],
+			[
+				"layoutsfoo",
+				"resources/views/front/layouts/footer.blade.php"
+			],
+			[
+				"commencon",
+				"app/Http/Controllers/CommentController.php"
+			],
+			[
+				"categoryc",
+				"app/Http/Controllers/CategoryController.php"
+			],
+			[
+				"modelspo",
+				"app/Models/Post.php"
+			],
+			[
+				"front",
+				"app/Http/Controllers/FrontendController.php"
+			],
+			[
+				"PostController",
+				"app/Http/Controllers/PostController.php"
 			],
 			[
 				"web",
 				"routes/web.php"
+			],
+			[
+				"modelscomme",
+				"app/Models/Comment.php"
+			],
+			[
+				"commentpre",
+				"app/Presenters/CommentPresenter.php"
+			],
+			[
+				"commentcon",
+				"app/Http/Controllers/CommentController.php"
+			],
+			[
+				"FRON",
+				"app/Http/Controllers/FrontendController.php"
+			],
+			[
+				"frontlay",
+				"resources/views/front/layouts/header.blade.php"
+			],
+			[
+				"WEB",
+				"webpack.mix.js"
+			],
+			[
+				"fronten",
+				"app/Http/Controllers/FrontendController.php"
 			],
 			[
 				"frontpos",
@@ -1207,20 +1208,12 @@
 				"app/Presenters/PostPresenter.php"
 			],
 			[
-				"front",
-				"app/Http/Controllers/FrontendController.php"
-			],
-			[
 				"modelsTa",
 				"app/Models/Tag.php"
 			],
 			[
 				"modelsca",
 				"app/Models/Category.php"
-			],
-			[
-				"postcon",
-				"app/Http/Controllers/PostController.php"
 			],
 			[
 				"modelsPos",
@@ -1247,14 +1240,6 @@
 				"app/Http/Controllers/FrontendController.php"
 			],
 			[
-				"commentcon",
-				"app/Http/Controllers/CommentController.php"
-			],
-			[
-				"appbla",
-				"resources/views/layouts/app.blade.php"
-			],
-			[
 				"CommentController",
 				"app/Http/Controllers/CommentController.php"
 			],
@@ -1265,10 +1250,6 @@
 			[
 				"modelsCate",
 				"app/Models/Category.php"
-			],
-			[
-				"commentpre",
-				"app/Presenters/CommentPresenter.php"
 			],
 			[
 				"commentstable",
@@ -1321,14 +1302,6 @@
 			[
 				"appse",
 				"app/Providers/AppServiceProvider.php"
-			],
-			[
-				"modelscomme",
-				"app/Models/Comment.php"
-			],
-			[
-				"modelspo",
-				"app/Models/Post.php"
 			],
 			[
 				"createComments",
@@ -1385,10 +1358,6 @@
 			[
 				"configfile",
 				"config/filesystems.php"
-			],
-			[
-				"configapp",
-				"config/app.php"
 			],
 			[
 				"create_pos",
@@ -1629,74 +1598,6 @@
 			[
 				"reportescon",
 				"app/Http/Controllers/ReportesController.php"
-			],
-			[
-				"",
-				"app/Http/Controllers/ReportesController.php"
-			],
-			[
-				"reportespac",
-				"resources/views/reportes/pacientes.blade.php"
-			],
-			[
-				"repor",
-				"app/Http/Controllers/ReportesController.php"
-			],
-			[
-				"modelspac",
-				"app/Models/Paciente.php"
-			],
-			[
-				"excel",
-				"config/excel.php"
-			],
-			[
-				"sidemenu",
-				"resources/views/layouts/sidemenu.blade.php"
-			],
-			[
-				"pacientescon",
-				"app/Http/Controllers/PacientesController.php"
-			],
-			[
-				"facturacioncon",
-				"app/Http/Controllers/FacturacionController.php"
-			],
-			[
-				"pacicon",
-				"app/Http/Controllers/PacienteController.php"
-			],
-			[
-				"reportespacien",
-				"resources/views/reportes/pacientes.blade.php"
-			],
-			[
-				"reportescontroller",
-				"app/Http/Controllers/ReportesController.php"
-			],
-			[
-				"proceco",
-				"app/Http/Controllers/ProcedimientoController.php"
-			],
-			[
-				"descripcionquirurgicaindex",
-				"resources/views/descripcionquirurgica/index.blade.php"
-			],
-			[
-				"modelsdefinit",
-				"app/Models/Historiaclinicadefinitiva.php"
-			],
-			[
-				"procedicon",
-				"app/Http/Controllers/ProcedimientoController.php"
-			],
-			[
-				"modelspro",
-				"app/Models/Procedimiento.php"
-			],
-			[
-				"pacientescp",
-				"app/Http/Controllers/PacientesController.php"
 			]
 		],
 		"width": 0.0

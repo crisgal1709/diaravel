@@ -53,6 +53,10 @@ return [
         'null' => [
             'driver' => 'null',
         ],
+        
+        'cubic' => [
+            'driver' => 'cubic'
+        ],
 
     ],
 

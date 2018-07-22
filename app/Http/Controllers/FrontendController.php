@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\CommentCreated;
 use App\Models\Category;
 use App\Models\Comment;
 use App\Models\Post;
@@ -66,6 +67,8 @@ class FrontendController extends Controller
          ];
 
          $comment = Comment::create($data);
+
+         CommentCreated::dispatch($comment);
 
          if (request()->ajax()) {
              return response()->json([

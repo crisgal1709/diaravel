@@ -3,26 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>InfyOm Laravel Generator</title>
+    <title>{{ config('app.name') }}</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="/adminlte/css/bootstrap/bootstrap.min.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/adminlte/css/fontawesome/font-awesome.min.css">
 
     <!-- Ionicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/adminlte/css/ionicons/ionicons.min.css">
 
     <!-- Theme style -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="/adminlte/css/adminlte/AdminLTE.min.css">
+    <link rel="stylesheet" href="/adminlte/css/adminlte/_all_skins.min.css">
 
     <!-- iCheck -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/_all.css">
+    <link rel="stylesheet" href="/adminlte/css/icheck/ichek.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,7 +36,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="{{ url('/home') }}"><b>InfyOm </b>Generator</a>
+        <a href="{{ url('/home') }}"><b> {{ config('app.name') }} </b></a>
     </div>
 
     <!-- /.login-logo -->
@@ -91,13 +92,18 @@
     </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/adminlte/js/jquery/jquery.min.js"></script>
+    <script src="/adminlte/js/bootstrap/bootstrap.min.js"></script>
 
-<!-- AdminLTE App -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/adminlte/js/adminlte/adminlte.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+    <script src="/adminlte/js/icheck/icheck.min.js"></script>
+    <script src="/adminlte/js/select2/select2.min.js"></script>
+    <script src="/adminlte/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/adminlte/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="/adminlte/alertifyjs/alertify.min.js"></script>
+    <script src="/js/notify.js"></script>
 <script>
     $(function () {
         $('input').iCheck({

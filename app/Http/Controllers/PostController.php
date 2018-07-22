@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\PostCreated;
 use App\Http\Controllers\AppBaseController;
 use App\Http\Requests\CreatePostRequest;
 use App\Http\Requests\UpdatePostRequest;
@@ -80,6 +81,9 @@ class PostController extends AppBaseController
         if ($request->has('archives')) {
             $post->saveArvhives($request);
         }
+
+        PostCreated::dispatch($post);
+
 
         Flash::success('Post saved successfully.');
 

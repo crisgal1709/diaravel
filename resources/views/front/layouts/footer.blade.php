@@ -25,7 +25,7 @@
                         <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
                         <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
                     </ul>
-                    <div class="copyright">&copy; Copyright 2018 {{ config('app.name') }}. All Rights Reserved </div>
+                    <div class="copyright">&copy; Copyright 2018 {{ config('app.name') }}. Todos los derechos reservados </div>
                 </div>
             </div>
         </div>
@@ -48,9 +48,21 @@
 <script src="/front/js/script.js"></script>
 <script src="/js/notify.js"></script>
 <script src="/adminlte/alertifyjs/alertify.min.js"></script>
+<script src="/js/socket.io.js"></script>
 
 <script>
-        alertify.set('notifier','position', 'top-right');
+
+    alertify.set('notifier','position', 'top-right');
+
+    socket = io.connect('http://crigalnode.herokuapp.com', {
+        forceNew: true,
+    });
+
+    socket.on('App\\Events\\PostCreated', function(data){
+       alertify.notify('!Hemos publicado una nueva entrada! <a target="_blank" href="'+data.url+'">Puedes verla aquí</a>', 'success')
+   });
+
+        
 </script>
 
 @stack('scripts')
