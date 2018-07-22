@@ -8,6 +8,7 @@ use App\Models\Comment;
 use App\Models\Post;
 use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 class FrontendController extends Controller
 {
@@ -35,11 +36,13 @@ class FrontendController extends Controller
             return redirect()->route('dashboard');
         }
 
-    	$post = Post::Published()
+    	$post = Cache::rememberForever('post-' . $slug, function() use($slug){
+            return Post::Published()
                     ->where('slug', '=', $slug)
                     ->with('comments')
                     ->with('comments.responses')
-    				->first();
+                    ->first();
+        });
 
         if (is_null($post)) {
             abort(404);

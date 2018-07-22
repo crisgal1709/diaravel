@@ -91,6 +91,7 @@ class Post extends Model
 
     public function scopePublished($query){
         return $query->where('published', '=', 1)
+                        ->orderBy('created_at')
                         ->with('categories')
                         ->with('tags')
                         ->with('archives');
@@ -112,6 +113,22 @@ class Post extends Model
         }
         
         return $comments->where('approved', '=', 1);
+    }
+
+    public function syncTags($tags){
+        $tags = collect($tags)->map(function($tag){
+            return Tag::find($tag) ? $tag : Tag::create(['name' => $tag])->id;
+        });
+
+        return $this->tags()->sync($tags);
+    }
+
+    public function syncCategories($categories){
+        $categories = collect($categories)->map(function($category){
+            return Category::find($category) ? $category : Category::create(['name' => $category])->id;
+        });
+
+        return $this->categories()->sync($categories);
     }
 
 

@@ -12,6 +12,7 @@ use App\Models\Tag;
 use App\Repositories\PostRepository;
 use Flash;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
 
@@ -64,18 +65,19 @@ class PostController extends AppBaseController
      */
     public function store(CreatePostRequest $request)
     {
-        //dd($request->archives);
+        //dd($request->all());
 
         $input = $request->all();
 
-        $post = $this->postRepository->create($input);
+        $post = Post::create($input);
 
         if ($request->has('tags')) {
-            $post->tags()->sync($request->tags);
+            //$post->tags()->sync($request->tags);
+            $post->syncTags($request->tags);
         }
 
         if ($request->has('categories')) {
-            $post->categories()->sync($request->categories);
+            $post->syncCategories($request->categories);
         }
 
         if ($request->has('archives')) {
@@ -83,6 +85,8 @@ class PostController extends AppBaseController
         }
 
         PostCreated::dispatch($post);
+
+        Cache::flush();
 
 
         Flash::success('Post saved successfully.');
@@ -152,17 +156,21 @@ class PostController extends AppBaseController
             return redirect(route('posts.index'));
         }
 
-        $post = $this->postRepository->update($request->all(), $id);
+        $post->update($request->all());
 
         if ($request->has('tags')) {
-            $post->tags()->sync($request->tags);
+            $post->syncTags($request->tags);
         } else {
             $post->tags()->detach();
         }
 
         if ($request->has('categories')) {
+            $post->syncCategories($request->categories);
+        } else {
             $post->categories()->detach();
         }
+
+        Cache::flush();
 
         Flash::success('Post updated successfully.');
 
@@ -191,6 +199,8 @@ class PostController extends AppBaseController
         Flash::success('Post deleted successfully.');
 
         return redirect(route('posts.index'));
+
+        Cache::flush();
     }
 
     public function publishe($id)
@@ -206,6 +216,8 @@ class PostController extends AppBaseController
         $post->save();
 
         // dd($comment);
+
+        Cache::flush();
 
         Flash::success('Comentario ' . $text . ' Con éxito' );
 

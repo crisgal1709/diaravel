@@ -24,7 +24,7 @@ class PostPresenter{
 	public function getCategories(){
 
 		if ($this->post->categories->count() > 0) {
-			$a = '<i class="fa fa-tag"></i> ';
+			$a = '<i class="fa fa-list-alt"></i> ';
 			$c = 1;
 			$cont = $this->post->categories->count();
 			foreach ($this->post->categories as $category) {

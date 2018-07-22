@@ -520,19 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "resources/views/posts/show.blade.php",
+			"file": "app/Cubic/Cubic.php",
 			"settings":
 			{
-				"buffer_size": 558,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/comments/show.blade.php",
-			"settings":
-			{
-				"buffer_size": 567,
+				"buffer_size": 2750,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -541,7 +532,16 @@
 			"file": "resources/views/layouts/app.blade.php",
 			"settings":
 			{
-				"buffer_size": 8320,
+				"buffer_size": 8330,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/front/layouts/footer.blade.php",
+			"settings":
+			{
+				"buffer_size": 2596,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -636,15 +636,14 @@
 		"/Applications/AMPPS/www/diaravel/app/Cubic",
 		"/Applications/AMPPS/www/diaravel/app/Events",
 		"/Applications/AMPPS/www/diaravel/app/Traits",
-		"/Applications/AMPPS/www/diaravel/config",
-		"/Applications/AMPPS/www/diaravel/public",
-		"/Applications/AMPPS/www/diaravel/public/js",
 		"/Applications/AMPPS/www/diaravel/resources",
 		"/Applications/AMPPS/www/diaravel/resources/views",
 		"/Applications/AMPPS/www/diaravel/resources/views/layouts"
 	],
 	"file_history":
 	[
+		"/Applications/AMPPS/www/diaravel/resources/views/posts/show.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/comments/show.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/posts/table.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/posts/show_fields.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/comments/show_fields.blade.php",
@@ -770,13 +769,11 @@
 		"/Applications/AMPPS/www/diaravel/composer.json",
 		"/Applications/AMPPS/www/diaravel/config/filesystems.php",
 		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_204433_create_posts_tags_table.php",
-		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_204448_create_categories_posts_table.php",
-		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_175634_create_posts_table.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/categories/fields.blade.php"
+		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_204448_create_categories_posts_table.php"
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -940,24 +937,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "resources/views/posts/show.blade.php",
+					"file": "app/Cubic/Cubic.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 558,
+						"buffer_size": 2750,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								201,
-								201
+								356,
+								325
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -970,19 +967,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "resources/views/comments/show.blade.php",
+					"file": "resources/views/layouts/app.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 567,
+						"buffer_size": 8330,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								204,
-								204
+								7727,
+								7727
 							]
 						],
 						"settings":
@@ -992,7 +989,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3056.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1000,19 +997,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "resources/views/layouts/app.blade.php",
-					"semi_transient": true,
+					"file": "resources/views/front/layouts/footer.blade.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8320,
+						"buffer_size": 2596,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2304,
+								2304
 							]
 						],
 						"settings":
@@ -1022,7 +1019,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2919.0,
+						"translation.y": 633.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1088,6 +1085,14 @@
 		"selected_items":
 		[
 			[
+				"frontla",
+				"resources/views/front/layouts/footer.blade.php"
+			],
+			[
+				"appbla",
+				"resources/views/layouts/app.blade.php"
+			],
+			[
 				"postp",
 				"app/Presenters/PostPresenter.php"
 			],
@@ -1126,14 +1131,6 @@
 			[
 				"postcon",
 				"app/Http/Controllers/PostController.php"
-			],
-			[
-				"frontla",
-				"resources/views/front/layouts/footer.blade.php"
-			],
-			[
-				"appbla",
-				"resources/views/layouts/app.blade.php"
 			],
 			[
 				"configapp",
