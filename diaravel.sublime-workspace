@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ca",
+				"categories"
+			],
+			[
 				"pub",
 				"publishe"
 			],
@@ -510,39 +514,25 @@
 			[
 				"tag",
 				"tags-upload"
-			],
-			[
-				"color",
-				"colorText"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/Cubic/Cubic.php",
+			"file": "config/genealabs-laravel-caffeine.php",
 			"settings":
 			{
-				"buffer_size": 2750,
+				"buffer_size": 2657,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/layouts/app.blade.php",
+			"file": "vendor/genealabs/laravel-caffeine/resources/views/script.blade.php",
 			"settings":
 			{
-				"buffer_size": 8330,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/front/layouts/footer.blade.php",
-			"settings":
-			{
-				"buffer_size": 2596,
-				"encoding": "UTF-8",
+				"buffer_size": 874,
 				"line_ending": "Unix"
 			}
 		}
@@ -632,22 +622,43 @@
 	"expanded_folders":
 	[
 		"/Applications/AMPPS/www/diaravel",
-		"/Applications/AMPPS/www/diaravel/app",
-		"/Applications/AMPPS/www/diaravel/app/Cubic",
-		"/Applications/AMPPS/www/diaravel/app/Events",
-		"/Applications/AMPPS/www/diaravel/app/Traits",
+		"/Applications/AMPPS/www/diaravel/config",
+		"/Applications/AMPPS/www/diaravel/database",
 		"/Applications/AMPPS/www/diaravel/resources",
 		"/Applications/AMPPS/www/diaravel/resources/views",
-		"/Applications/AMPPS/www/diaravel/resources/views/layouts"
+		"/Applications/AMPPS/www/diaravel/vendor",
+		"/Applications/AMPPS/www/diaravel/vendor/genealabs",
+		"/Applications/AMPPS/www/diaravel/vendor/genealabs/laravel-caffeine",
+		"/Applications/AMPPS/www/diaravel/vendor/genealabs/laravel-caffeine/resources",
+		"/Applications/AMPPS/www/diaravel/vendor/genealabs/laravel-caffeine/resources/views",
+		"/Applications/AMPPS/www/diaravel/vendor/genealabs/laravel-caffeine/routes",
+		"/Applications/AMPPS/www/diaravel/vendor/genealabs/laravel-caffeine/src",
+		"/Applications/AMPPS/www/diaravel/vendor/genealabs/laravel-caffeine/src/Http",
+		"/Applications/AMPPS/www/diaravel/vendor/genealabs/laravel-caffeine/src/Http/Controllers",
+		"/Applications/AMPPS/www/diaravel/vendor/genealabs/laravel-caffeine/src/Http/Middleware",
+		"/Applications/AMPPS/www/diaravel/vendor/genealabs/laravel-caffeine/src/Providers"
 	],
 	"file_history":
 	[
+		"/Applications/AMPPS/www/diaravel/vendor/genealabs/laravel-caffeine/src/Http/Controllers/Drip.php",
+		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/PostController.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/layouts/app.blade.php",
+		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/FrontendController.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Database/PostgresConnection.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts/footer.blade.php",
+		"/Applications/AMPPS/www/diaravel/database/seeds/UsersSeeder.php",
+		"/Applications/AMPPS/www/diaravel/database/seeds/DatabaseSeeder.php",
+		"/Applications/AMPPS/www/diaravel/app/Cubic/Cubic.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/layouts/menu.blade.php",
+		"/Applications/AMPPS/www/diaravel/app/Models/Post.php",
+		"/Applications/AMPPS/www/diaravel/app/Presenters/PostPresenter.php",
+		"/Applications/AMPPS/www/diaravel/vendor/infyomlabs/laravel-generator/src/Common/BaseRepository.php",
+		"/Applications/AMPPS/www/diaravel/app/Repositories/PostRepository.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/posts/show.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/comments/show.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/posts/table.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/posts/show_fields.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/comments/show_fields.blade.php",
-		"/Applications/AMPPS/www/diaravel/app/Presenters/PostPresenter.php",
 		"/Applications/AMPPS/www/diaravel/routes/web.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/tags/table.blade.php",
 		"/Applications/AMPPS/www/diaravel/app/Models/Tag.php",
@@ -663,16 +674,11 @@
 		"/Applications/AMPPS/www/diaravel/public/js/socket.io.js",
 		"/Applications/AMPPS/www/diaravel/.env",
 		"/Applications/AMPPS/www/diaravel/config/broadcasting.php",
-		"/Applications/AMPPS/www/diaravel/app/Cubic/Cubic.php",
-		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/PostController.php",
 		"/Applications/AMPPS/www/diaravel/app/Events/PostCreated.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Foundation/Bus/Dispatchable.php",
 		"/Applications/AMPPS/www/diaravel/app/Events/CommentCreated.php",
 		"/Applications/AMPPS/www/diaravel/app/Providers/EventServiceProvider.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts/footer.blade.php",
-		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/FrontendController.php",
 		"/Applications/AMPPS/www/diaravel/config/app.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/layouts/app.blade.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Queue/SerializesModels.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Queue/SerializesAndRestoresModelIdentifiers.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Foundation/Events/Dispatchable.php",
@@ -694,7 +700,6 @@
 		"/Applications/AMPPS/www/diaravel/resources/views/auth/passwords/email.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/auth/passwords/reset.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/auth/register.blade.php",
-		"/Applications/AMPPS/www/diaravel/app/Models/Post.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/post.blade.php",
 		"/Applications/AMPPS/www/diaravel/app/Models/Comment.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts/header.blade.php",
@@ -730,12 +735,10 @@
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/partials/sidebar/categories.blade.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factory.php",
-		"/Applications/AMPPS/www/diaravel/database/seeds/DatabaseSeeder.php",
 		"/Applications/AMPPS/www/diaravel/app/Traits/UserId.php",
 		"/Applications/AMPPS/www/diaravel/database/migrations/2014_10_12_000000_create_users_table.php",
 		"/Applications/AMPPS/www/diaravel/app/Providers/AppServiceProvider.php",
 		"/Applications/AMPPS/www/diaravel/vendor/fzaninotto/faker/src/Faker/Documentor.php",
-		"/Applications/AMPPS/www/diaravel/database/seeds/UsersSeeder.php",
 		"/Applications/AMPPS/www/diaravel/public/adminlte/css/fontawesome/font-awesome.min.css",
 		"/Applications/AMPPS/www/diaravel/public/adminlte/js/ckeditor/ckeditor5.js",
 		"/Applications/AMPPS/www/diaravel/resources/views/posts/fields.blade.php",
@@ -764,12 +767,7 @@
 		"/Applications/AMPPS/www/diaravel/app/Models/Archive.php",
 		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/Controller.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Contracts/View/Factory.php",
-		"/Applications/AMPPS/www/diaravel/app/Traits/Drive.php",
-		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_213521_create_archivos_table.php",
-		"/Applications/AMPPS/www/diaravel/composer.json",
-		"/Applications/AMPPS/www/diaravel/config/filesystems.php",
-		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_204433_create_posts_tags_table.php",
-		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_204448_create_categories_posts_table.php"
+		"/Applications/AMPPS/www/diaravel/app/Traits/Drive.php"
 	],
 	"find":
 	{
@@ -787,6 +785,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tags",
+			"tag",
+			"Tag",
+			"tag",
+			"tags",
+			"sincronizarCategories",
+			"syncTags",
+			"archives",
+			"Posts",
 			"creating",
 			"show",
 			"id",
@@ -905,16 +912,7 @@
 			"name",
 			"paragra",
 			"sentence",
-			"para",
-			"PostsSeeders",
-			"faker",
-			"published",
-			"category",
-			"Category",
-			"email",
-			"comments",
-			"Response",
-			"/**!"
+			"para"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -932,24 +930,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Cubic/Cubic.php",
+					"file": "config/genealabs-laravel-caffeine.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2750,
+						"buffer_size": 2657,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								356,
-								325
+								553,
+								553
 							]
 						],
 						"settings":
@@ -962,24 +960,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "resources/views/layouts/app.blade.php",
-					"semi_transient": false,
+					"file": "vendor/genealabs/laravel-caffeine/resources/views/script.blade.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 8330,
+						"buffer_size": 874,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7727,
-								7727
+								0,
+								0
 							]
 						],
 						"settings":
@@ -989,40 +987,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3056.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "resources/views/front/layouts/footer.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2596,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2304,
-								2304
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 633.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1085,12 +1053,40 @@
 		"selected_items":
 		[
 			[
-				"frontla",
-				"resources/views/front/layouts/footer.blade.php"
-			],
-			[
 				"appbla",
 				"resources/views/layouts/app.blade.php"
+			],
+			[
+				"frontend",
+				"app/Http/Controllers/FrontendController.php"
+			],
+			[
+				"postcon",
+				"app/Http/Controllers/PostController.php"
+			],
+			[
+				"postscon",
+				"vendor/laravel/framework/src/Illuminate/Database/PostgresConnection.php"
+			],
+			[
+				"fronten",
+				"app/Http/Controllers/FrontendController.php"
+			],
+			[
+				"databasese",
+				"database/seeds/DatabaseSeeder.php"
+			],
+			[
+				"MODELSPOS",
+				"app/Models/Post.php"
+			],
+			[
+				"POSTCON",
+				"app/Http/Controllers/PostController.php"
+			],
+			[
+				"frontla",
+				"resources/views/front/layouts/footer.blade.php"
 			],
 			[
 				"postp",
@@ -1127,10 +1123,6 @@
 			[
 				"fron",
 				"app/Http/Controllers/FrontendController.php"
-			],
-			[
-				"postcon",
-				"app/Http/Controllers/PostController.php"
 			],
 			[
 				"configapp",
@@ -1187,10 +1179,6 @@
 			[
 				"WEB",
 				"webpack.mix.js"
-			],
-			[
-				"fronten",
-				"app/Http/Controllers/FrontendController.php"
 			],
 			[
 				"frontpos",
@@ -1575,26 +1563,6 @@
 			[
 				"pusher",
 				"vendor/laravel/framework/src/Illuminate/Broadcasting/Broadcasters/PusherBroadcaster.php"
-			],
-			[
-				"eventser",
-				"app/Providers/EventServiceProvider.php"
-			],
-			[
-				"lre",
-				"app/Http/Controllers/LreservasController.php"
-			],
-			[
-				"reportesfac",
-				"resources/views/reportes/facturacion.blade.php"
-			],
-			[
-				"reportespacie",
-				"resources/views/reportes/pacientes.blade.php"
-			],
-			[
-				"reportescon",
-				"app/Http/Controllers/ReportesController.php"
 			]
 		],
 		"width": 0.0
