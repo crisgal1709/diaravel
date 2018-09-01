@@ -45,6 +45,10 @@
     </style>
 
     @stack('css')
+
+
+
+
 </head>
 
 <body class="skin-blue sidebar-mini">

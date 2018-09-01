@@ -4,11 +4,20 @@
                                     </div>
                                     <div class="pull-right">
                                     	<ul class="social-icon-one">
-                                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                            <li>
+                                                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ route('frontend.post', $post->slug) }}"><span class="fa fa-facebook"></span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#"><span class="fa fa-twitter"></span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#"><span class="fa fa-google-plus"></span>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>

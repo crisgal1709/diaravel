@@ -1,7 +1,4 @@
 @extends('front.layouts.layout')
-
-
-
 @section('content')
 	<!--News List Section-->
     <section class="news-list-section">

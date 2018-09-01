@@ -16,8 +16,8 @@ class PostPresenter{
 		# code...
 		$this->post = $post;
 
-		Carbon::setLocale('es');
-        setlocale(LC_TIME, 'es_ES.UTF-8');
+		Carbon::setLocale('en');
+        setlocale(LC_TIME, 'en.UTF-8');
 	}
 
 
@@ -40,7 +40,7 @@ class PostPresenter{
 			return new HtmlString($a);
 		}
 
-		return 'Sin categoría';
+		return 'No Categorie';
 	}
 
 	public function getTags(){
@@ -67,7 +67,7 @@ class PostPresenter{
 
 	public function getPublishedDate(){
 
-		return $this->post->created_at->formatLocalized('%d de %B del %Y');
+		return $this->post->created_at->formatLocalized('%d of %B of %Y');
 
 	}
 
@@ -103,21 +103,21 @@ class PostPresenter{
 		$numComments= $this->post->comments->count();
 
 		if ($numComments == 0) {
-			return 'No hay comentarios. Sé el primero en opinar.';
+			return 'There are no comments. Be the first to review.';
 		} else if($numComments == 1){
-			return '1 Comentario';
+			return '1 Comment';
 		} else {
-			return $numComments . ' Comentarios';
+			return $numComments . ' Comments';
 		}
 	}
 
 	public function status(){
 		if ($this->resolveStatus()) {
-			$a = ' <a href="'.route('posts.publishe', [$this->post->id]).'" class="btn btn-warning btn-xs" title="Marcar como no publicado">
+			$a = ' <a href="'.route('posts.publishe', [$this->post->id]).'" class="btn btn-warning btn-xs" title="Mark as published">
                       <i class="fa fa-remove"></i>
                    </a>';
 		} else {
-			$a = '<a href="'.route('posts.publishe', [$this->post->id]) .'" class="btn btn-success btn-xs" title="Publicar">
+			$a = '<a href="'.route('posts.publishe', [$this->post->id]) .'" class="btn btn-success btn-xs" title="Publish">
                      <i class="fa fa-check"></i>
                   </a>';
 		}
@@ -131,8 +131,8 @@ class PostPresenter{
 		}
 
 		return $this->post->published
-						? 'Publicado'
-						: 'No publicado';
+						? 'Published'
+						: 'Not Published';
 	}
 
 }

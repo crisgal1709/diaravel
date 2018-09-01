@@ -1,5 +1,9 @@
+<li class="{{ Request::is('users*') ? 'active' : '' }}">
+    <a href="{{ route('profile.edit', 1) }}"><i class="fa fa-user"></i><span>Profile</span></a>
+</li>
+
 <li class="{{ Request::is('posts*') ? 'active' : '' }}">
-    <a target="_blank" href="{{ url('') }}"><i class="fa fa-home"></i><span>Visitar sitio</span></a>
+    <a target="_blank" href="{{ url('') }}"><i class="fa fa-home"></i><span>Visit site</span></a>
 </li>
 
 <li class="{{ Request::is('posts*') ? 'active' : '' }}">

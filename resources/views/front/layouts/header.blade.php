@@ -35,7 +35,14 @@
 	}
 </style>
 
+<script type = 'text / javascript' src = '// platform-api.sharethis.com/js/sharethis.js#property=5b8b196d59ed1f001188afe4&product=sticky-share-buttons' async = 'async'> </script>
+
+
 <meta name="csrf-token" content="{{ csrf_token() }}">
+
 </head>
+
+<div class = "sharethis-in-line-share-buttons"> </ div>
+
 
 <body>

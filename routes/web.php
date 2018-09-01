@@ -42,6 +42,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function(){
 	Route::resource('abouts', 'AboutController');
 
 	Route::resource('socialNetworks', 'SocialNetworkController');
+
+	Route::resource('profile', 'ProfileController');
 });
 
 
