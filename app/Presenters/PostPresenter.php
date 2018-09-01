@@ -86,7 +86,7 @@ class PostPresenter{
 	public function thumbnail(){
 		if ($this->post->archives->count() > 0){
 
-			return new HtmlString('<img src="'.$this->post->archives->first()->route.'" alt="'.$this->post->title.'" class="img-responsive" style="width: 90%; height: auto">');
+			return new HtmlString('<img src="'.asset($this->post->archives->first()->route).'" alt="'.$this->post->title.'" class="img-responsive" style="width: 90%; height: auto">');
 
 		} else {
 

@@ -32,32 +32,21 @@ trait HasArchives {
 
    public function saveArchive($archive){
 
-    $filename = $archive->getClientOriginalName();
-    // Store a demo file
+    $path = 'uploads/' . $this->setDestinoArchivos();
 
-    Storage::cloud()->put($filename, file_get_contents($archive->getPathname()));
-    // Get the file to find the ID
-    $dir = '/';
-    $recursive = false; // Get subdirectories also?
-    $contents = collect(Storage::cloud()->listContents($dir, $recursive));
-    $file = $contents
-          ->where('type', '=', 'file')
-          ->where('filename', '=', pathinfo($filename, PATHINFO_FILENAME))
-          ->where('extension', '=', pathinfo($filename, PATHINFO_EXTENSION))
-          ->first(); // there can be duplicate file names!
-      // Change permissions
-      // - https://developers.google.com/drive/v3/web/about-permissions
-      // - https://developers.google.com/drive/v3/reference/permissions
-        $service = Storage::cloud()->getAdapter()->getService();
-        $permission = new \Google_Service_Drive_Permission();
-        $permission->setRole('reader');
-        $permission->setType('anyone');
-        $permission->setAllowFileDiscovery(false);
-        $permissions = $service->permissions->create($file['basename'], $permission);
-        
+    $name = time() . '_' . $archive->getClientOriginalName();
+
+        $upload = Storage::url(
+            $archive->storeAs(
+              $path, 
+              $name,
+              $this->disk()
+             )
+          );
+
         $this->archives()->create([
-          'name' => $filename,
-          'route' => Storage::cloud()->url($file['path']),
+          'route' => 'uploads/' . $this->setDestinoArchivos() . '/' . $name,
+          'name' => $archive->getClientOriginalName()
         ]);
 
    }
@@ -77,6 +66,10 @@ trait HasArchives {
     
 
     return $destino;
+   }
+
+   private function disk(){
+    return 'public';
    }
    
 }
