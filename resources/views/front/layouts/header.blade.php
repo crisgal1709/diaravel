@@ -42,7 +42,7 @@
 
 </head>
 
-<div class = "sharethis-in-line-share-buttons"> </ div>
+<div class="sharethis-inline-share-buttons"></div>
 
 
 <body>
