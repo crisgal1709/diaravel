@@ -54,19 +54,9 @@
 <script src="/front/js/script.js"></script>
 <script src="/js/notify.js"></script>
 <script src="/adminlte/alertifyjs/alertify.min.js"></script>
-<script src="/js/socket.io.js"></script>
-
 <script>
 
     alertify.set('notifier','position', 'top-right');
-
-    socket = io.connect('http://crigalnode.herokuapp.com', {
-        forceNew: true,
-    });
-
-    socket.on('App\\Events\\PostCreated', function(data){
-       alertify.notify('We have published a new entry! <a target="_blank" href="'+data.url+'">You can see it here</a>', 'success')
-   });
 
         
 </script>

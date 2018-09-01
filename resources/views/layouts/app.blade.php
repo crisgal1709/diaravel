@@ -186,19 +186,11 @@
     <script src="/adminlte/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
     <script src="/adminlte/alertifyjs/alertify.min.js"></script>
     <script src="/js/notify.js"></script>
-    <script src="/js/socket.io.js"></script>
+    
 
      <script>
 
         alertify.set('notifier','position', 'bottom-right');
-
-         socket = io.connect('http://crigalnode.herokuapp.com', {
-            forceNew: true,
-        });
-
-         socket.on('App\\Events\\CommentCreated', function(data){
-            alertify.notify('!Un nuevo comentario en ' + data.post + ' <a target="_blank" href="'+data.url+'">Ver</a>', 'success');
-         });
 
         $('.datatable').DataTable({
             'paging'      : true,
