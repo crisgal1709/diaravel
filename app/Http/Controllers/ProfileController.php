@@ -80,6 +80,10 @@ class ProfileController extends Controller
     public function update(Request $request, $id)
     {
 
+        Flash::error('Not authorized in Demo mode');
+
+        return back();
+
         $user = User::find($id);
 
         $data = [

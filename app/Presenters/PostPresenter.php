@@ -113,7 +113,7 @@ class PostPresenter{
 
 	public function status(){
 		if ($this->resolveStatus()) {
-			$a = ' <a href="'.route('posts.publishe', [$this->post->id]).'" class="btn btn-warning btn-xs" title="Mark as published">
+			$a = ' <a href="'.route('posts.publishe', [$this->post->id]).'" class="btn btn-warning btn-xs" title="Mark as not published">
                       <i class="fa fa-remove"></i>
                    </a>';
 		} else {

@@ -18,9 +18,9 @@
             	<h2></h2>
                 <form method="GET" action="{{ route('frontend.search') }}">
                     <div class="form-group" style="width: 100%; ">
-                        <input type="search" class="form-control" name="s" value="" placeholder="Buscar" required style="padding: 10px; width: 100%">
+                        <input type="search" class="form-control" name="s" value="" placeholder="Search" required style="padding: 10px; width: 100%">
                     </div>
-                    <button href="#" class="theme-btn btn-style-two">Buscar</button>
+                    <button href="#" class="theme-btn btn-style-two">Search</button>
                 </form>
                 
             </div>

@@ -10,14 +10,11 @@
                                             </li>
 
                                             <li>
-                                                <a href="#"><span class="fa fa-twitter"></span>
+                                                <a target="_blank" href="https://twitter.com/intent/tweet?text={{ route('frontend.post', $post->slug) }}"><span class="fa fa-twitter"></span>
                                                 </a>
                                             </li>
 
-                                            <li>
-                                                <a href="#"><span class="fa fa-google-plus"></span>
-                                                </a>
-                                            </li>
+                                            {{-- INSERT MORE OPTIONS --}}
                                         </ul>
                                     </div>
                                 </div>

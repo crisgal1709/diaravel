@@ -1,6 +1,6 @@
 <div class="sidebar-widget recent-news">
  <div class="sidebar-title">
-   <h2>Entradas recientes</h2>
+   <h2>Recent Posts</h2>
  </div>
 
 @foreach ($posts as $recentPost)
