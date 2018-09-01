@@ -28,12 +28,12 @@
                         
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li class="dropdown"><a href="{{ url('') }}">Inicio</a>
+                                <li class="dropdown"><a href="{{ url('') }}">Home</a>
                                 </li>
-                                <li><a href="{{ route('frontend.about') }}">Acerca de</a></li>
+                                <li><a href="{{ route('frontend.about') }}">About</a></li>
                                 <li class="dropdown"><a href="{{ url('') }}">Blog</a>
                                 </li>
-                               	<li><a href="{{ route('frontend.contact') }}">Contacto</a></li>
+                               	<li><a href="{{ route('frontend.contact') }}">Contact</a></li>
                              </ul>
                         </div>
                     </nav>

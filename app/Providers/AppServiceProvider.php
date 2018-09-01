@@ -55,6 +55,11 @@ class AppServiceProvider extends ServiceProvider
 
               $view->with(compact('controller', 'action', 'tituloPagina')); //envia el valor de controller y action al master blade.
             }); 
+
+
+        view()->share(['socials' => \App\Helper::socialNetworks()]);
+
+
     }
 
     /**

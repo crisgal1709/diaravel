@@ -10,7 +10,7 @@
             @if (isset($is_tag) && $is_tag)
                 <div class="well">
                     <h3 class="text-center">
-                        Entradas de la etiqueta : <strong>{{ $tag->name }}</strong>
+                        Entrys of the tag : <strong>{{ $tag->name }}</strong>
                     </h3>
                 </div>                      
             @endif
@@ -18,7 +18,7 @@
             @if (isset($is_category) && $is_category)
                 <div class="well">
                     <h3 class="text-center">
-                        Entradas de la Categoría : <strong>{{ $category->name }}</strong>
+                        Entrys of the categorie : <strong>{{ $category->name }}</strong>
                     </h3>
                 </div>                      
             @endif
@@ -26,7 +26,7 @@
             @if (isset($is_search) && $is_search)
                 <div class="well">
                     <h3 class="text-center">
-                        Resultados para la búsqueda : <strong>{{ $searchTerm }}</strong>
+                        Results for the search : <strong>{{ $searchTerm }}</strong>
                     </h3>
                 </div>                      
             @endif
@@ -34,7 +34,7 @@
             @if (isset($_GET['page']))
                 <div class="well">
                     <h3 class="text-center">
-                        Página {{ $_GET['page'] }}
+                        Page {{ $_GET['page'] }}
                     </h3>
                 </div>  
             @endif
@@ -42,7 +42,7 @@
             @if ($posts->count() < 1)
                 <div class="well">
                     <h3 class="text-center">
-                        No hay artículos disponibles
+                        No articles available
                     </h3>
                 </div>  
             @endif

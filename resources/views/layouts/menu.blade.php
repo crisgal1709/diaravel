@@ -18,3 +18,11 @@
     <a href="{!! route('comments.index') !!}"><i class="fa fa-comments-o"></i><span>Comments</span></a>
 </li>
 
+<li class="{{ Request::is('abouts*') ? 'active' : '' }}">
+    <a href="{!! route('abouts.index') !!}"><i class="fa fa-edit"></i><span>Abouts</span></a>
+</li>
+
+<li class="{{ Request::is('socialNetworks*') ? 'active' : '' }}">
+    <a href="{!! route('socialNetworks.index') !!}"><i class="fa fa-edit"></i><span>Social Networks</span></a>
+</li>
+

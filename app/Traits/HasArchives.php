@@ -21,7 +21,7 @@ trait HasArchives {
 
   //Guarda los archivos tanto en la base de datos como en el disco
 
-  public function saveArvhives($request){
+  public function saveArchives($request){
     if(is_null($request->file('archives'))){ return;}
       $archives = $request->file('archives');
       foreach($archives as $archive){

@@ -27,3 +27,7 @@ Route::resource('categories', 'CategoryAPIController');
 Route::resource('tags', 'TagAPIController');
 
 Route::resource('comments', 'CommentAPIController');
+
+Route::resource('abouts', 'AboutAPIController');
+
+Route::resource('social_networks', 'SocialNetworkAPIController');

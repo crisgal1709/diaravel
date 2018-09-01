@@ -45,3 +45,8 @@ Auth::routes();
 
 
 
+
+
+Route::resource('abouts', 'AboutController');
+
+Route::resource('socialNetworks', 'SocialNetworkController');

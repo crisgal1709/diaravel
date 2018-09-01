@@ -11,7 +11,7 @@ trait HasPresenter{
 		$presenter = '\\App\\Presenters\\' . $model . 'Presenter';
 
 		if (!class_exists($presenter)) {
-			throw new \InvalidArgumentException(sprintf('Presenter "%s" No encontrado', $presenter));
+			throw new \InvalidArgumentException(sprintf('Presenter "%s" Not exists', $presenter));
 		}
 
 		return new $presenter($this);

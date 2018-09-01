@@ -105,12 +105,12 @@
             var body = $('#formComments textarea[name=body]').val().trim();
 
             if (nombre == '') {
-                alert('Escribe tu nombre');
+                alert('Write your name');
                 return;
             }
 
             if (body == '') {
-                alert('Escribe tu comentario');
+                alert('Write your comment');
                 $('button[name=submit-form]').attr('disabled', 'disabled');
                 return;
             }
@@ -156,8 +156,8 @@
             e.preventDefault()
 
             $('.title-comment-form').html(
-                            'Respondiendo al comentario de <strong>' + $(this).attr('data-name') + '</strong>'
-                            + ' <a class="btn btn-default btn-xs" id="cancelarRespuesta">cancelar</a>'
+                            'Responding to the comment of <strong>' + $(this).attr('data-name') + '</strong>'
+                            + ' <a class="btn btn-default btn-xs" id="cancelarRespuesta">Cancel</a>'
                             );
 
             $('#formComments input[name=comment_id]').val($(this).attr('data-id'));

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Events\CommentCreated;
+use App\Models\About;
 use App\Models\Category;
 use App\Models\Comment;
 use App\Models\Post;
@@ -22,7 +23,7 @@ class FrontendController extends Controller
         static::$name = "Home";
 
         if (isset($_GET['page'])) {
-            static::$name = static::$name . ' - Página ' . $_GET['page'];
+            static::$name = static::$name . ' - Page ' . $_GET['page'];
         }
 
     	return view('front.home', [
@@ -126,15 +127,19 @@ class FrontendController extends Controller
 
     public function contact(Request $request)
     {
-        static::$name = "Contacto";
+        static::$name = "Contact";
 
         return view('front.contact');
     }
 
     public function about(Request $request)
     {   
-        static::$name = "Acerca de";
-        return view('front.about');
+        static::$name = "About";
+
+        $about = About::first();
+        return view('front.about', [
+            'about' => $about
+        ]);
     }
 
     public function search(Request $request)
@@ -143,7 +148,7 @@ class FrontendController extends Controller
                             ->where('title', 'LIKE', '%'.$request->s.'%')
                             ->simplePaginate($this->lenghtPaginate);
 
-        static::$name = "Búsqueda: " . $request->s;
+        static::$name = "Search: " . $request->s;
 
         return view('front.home', [
             'posts' => $posts,

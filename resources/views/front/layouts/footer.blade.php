@@ -15,18 +15,24 @@
             </div>
             <div class="row clearfix">
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                	<div class="mail-info">contact@diaravel.com <br> {{-- +44 20 7240 9319 --}}</div>
+                	<div class="mail-info">{{ App\Helper::infoContact() }} <br></div>
                 </div>
+                
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                	<ul class="social-icon-one">
-                    	<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                        <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
-                        <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
-                    </ul>
-                    <div class="copyright">&copy; Copyright 2018 {{ config('app.name') }}. Todos los derechos reservados </div>
+                    @if ($socials->count() > 0)
+                	   <ul class="social-icon-one">
+                           @foreach ($socials as $social)
+                    	       <li>
+                                    <a target="_blank" href="{{ $social->link }}" title="{{ $social->name }}">
+                                        <span class="fa {{ $social->icon }}"></span>
+                                    </a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    @endif
+                    <div class="copyright">&copy; Copyright {{ date('Y') }} {{ config('app.name') }}. All rights reserved </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -59,7 +65,7 @@
     });
 
     socket.on('App\\Events\\PostCreated', function(data){
-       alertify.notify('!Hemos publicado una nueva entrada! <a target="_blank" href="'+data.url+'">Puedes verla aquí</a>', 'success')
+       alertify.notify('We have published a new entry! <a target="_blank" href="'+data.url+'">You can see it here</a>', 'success')
    });
 
         

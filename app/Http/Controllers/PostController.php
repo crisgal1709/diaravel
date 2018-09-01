@@ -81,7 +81,7 @@ class PostController extends AppBaseController
         }
 
         if ($request->has('archives')) {
-            $post->saveArvhives($request);
+            $post->saveArchives($request);
         }
 
         PostCreated::dispatch($post);
