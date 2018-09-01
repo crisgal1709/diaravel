@@ -198,6 +198,12 @@ class PostController extends AppBaseController
 
         $post->comments->each->delete();
 
+        $post->archives->each->delete();
+
+        $post->categories->each->delete();
+
+        $post->tags->each->delete();
+
         Flash::success('Post deleted successfully.');
 
         return redirect(route('posts.index'));
