@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', 'FrontendController@index')->name('frontend.index');
 
 Route::get('posts', 'FrontendController@posts')->name('frontend.posts');
@@ -37,16 +38,11 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function(){
 	Route::resource('comments', 'CommentController');
 	Route::get('approveComment/{comment_id}', 'CommentController@approve')->name('comments.approve');
 	Route::get('publishePost/{post_id}', 'PostController@publishe')->name('posts.publishe');
+
+	Route::resource('abouts', 'AboutController');
+
+	Route::resource('socialNetworks', 'SocialNetworkController');
 });
 
 
 Auth::routes();
-
-
-
-
-
-
-Route::resource('abouts', 'AboutController');
-
-Route::resource('socialNetworks', 'SocialNetworkController');
