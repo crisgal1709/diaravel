@@ -76,7 +76,7 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="{{ asset('front/images/logo.png') }}"
+                                <img src="https://drive.google.com/uc?id=1_WTbtjR4FWF61m2GCBpyy00iN-xwX3EN&export=media"
                                      class="user-image" alt="User Image"/>
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{!! Auth::user()->name !!}</span>
@@ -84,8 +84,7 @@
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src="{{ asset('front/images/logo.png') }}"
-                                         class="img-circle" alt="User Image"/>
+                                    <img src="https://drive.google.com/uc?id=1_WTbtjR4FWF61m2GCBpyy00iN-xwX3EN&export=media" class="img-circle" alt="User Image"/>
                                     <p>
                                         {!! Auth::user()->name !!}
                                         <small>Member since {!! Auth::user()->created_at->format('M. Y') !!}</small>
@@ -142,7 +141,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{!! url('/') !!}">
-                    InfyOm Generator
+                    Diaravel
                 </a>
             </div>
 

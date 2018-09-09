@@ -6,7 +6,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="/front/images/logo.png" class="img-circle"
+                <img src="https://drive.google.com/uc?id=1xYfySQGzMq6G_UykJ7_BYTd-jlaqdyn1&export=media" class="img-circle"
                      alt="User Image"/>
             </div>
             <div class="pull-left info">
