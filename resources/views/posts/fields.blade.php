@@ -7,7 +7,7 @@
 <!-- Body Field -->
 <div class="form-group col-sm-12 col-lg-12">
     {!! Form::label('body', 'Body:') !!}
-    {!! Form::textarea('body', null, ['class' => 'editor', 'id' => 'editor', 'rows' => '10']) !!}
+    {!! Form::textarea('body', null, ['class' => 'editor', 'id' => 'editor', 'rows' => '20']) !!}
 </div>
 
 <!-- Excerpt Field -->
@@ -82,7 +82,7 @@
     <script>
         ClassicEditor
             .create( document.querySelector( '#editor' ), {
-                height: '450px'
+                height: '2000px'
 
             } )
             .catch( error => {

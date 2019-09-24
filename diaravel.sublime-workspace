@@ -532,11 +532,11 @@
 		"selected_items":
 		[
 			[
-				"rein",
+				"reind",
 				"Indentation: Reindent Lines"
 			],
 			[
-				"reind",
+				"rein",
 				"Indentation: Reindent Lines"
 			],
 			[
@@ -605,18 +605,33 @@
 	"expanded_folders":
 	[
 		"/Applications/AMPPS/www/diaravel",
-		"/Applications/AMPPS/www/diaravel/public",
-		"/Applications/AMPPS/www/diaravel/resources"
+		"/Applications/AMPPS/www/diaravel/app",
+		"/Applications/AMPPS/www/diaravel/app/Http",
+		"/Applications/AMPPS/www/diaravel/cgi-bin",
+		"/Applications/AMPPS/www/diaravel/resources",
+		"/Applications/AMPPS/www/diaravel/resources/views"
 	],
 	"file_history":
 	[
+		"/Applications/AMPPS/www/diaravel/.env",
+		"/Applications/AMPPS/www/diaravel/app/Http/Kernel.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/layouts/sidebar.blade.php",
+		"/Applications/AMPPS/www/diaravel/resources/views/layouts/app.blade.php",
+		"/Applications/AMPPS/www/diaravel/config/filesystems.php",
+		"/Applications/AMPPS/www/diaravel/config/app.php",
+		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php",
+		"/Applications/AMPPS/www/diaravel/composer.json",
+		"/Applications/AMPPS/www/diaravel/vendor/infyomlabs/laravel-generator/composer.json",
+		"/Applications/AMPPS/www/diaravel/vendor/composer/installed.json",
+		"/Applications/AMPPS/www/diaravel/routes/web.php",
+		"/Applications/AMPPS/www/diaravel/app/Providers/GoogleDriveServiceProvider.php",
+		"/Applications/AMPPS/www/diaravel/app/Traits/HasArchives.php",
+		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/PostController.php",
 		"/Applications/AMPPS/www/diaravel/server.php",
 		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/ProfileController.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/profile/edit.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/comments/index.blade.php",
-		"/Applications/AMPPS/www/diaravel/.env",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts/footer.blade.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/layouts/app.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/layouts/menu.blade.php",
 		"/Applications/AMPPS/www/diaravel/app/User.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravelcollective/html/src/FormBuilder.php",
@@ -627,14 +642,12 @@
 		"/Applications/AMPPS/www/diaravel/resources/views/front/partials/sidebar/recent-posts.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts/header.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/partials/share.blade.php",
-		"/Applications/AMPPS/www/diaravel/routes/web.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/home.blade.php",
 		"/Applications/AMPPS/www/diaravel/app/Presenters/PostPresenter.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/layouts/hidden-bar.blade.php",
 		"/Applications/AMPPS/www/diaravel/apijson/configuration.json",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/contact.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/post.blade.php",
-		"/Applications/AMPPS/www/diaravel/composer.json",
 		"/Applications/AMPPS/www/diaravel/database/migrations/2018_09_01_135902_create_social_networks_table.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/social_networks/fields.blade.php",
 		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/SocialNetworkController.php",
@@ -643,10 +656,8 @@
 		"/Applications/AMPPS/www/diaravel/app/Models/SocialNetwork.php",
 		"/Applications/AMPPS/www/diaravel/app/Helper.php",
 		"/Applications/AMPPS/www/diaravel/app/Models/About.php",
-		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/PostController.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/front/about.blade.php",
 		"/Applications/AMPPS/www/diaravel/app/Presenters/AboutPresenter.php",
-		"/Applications/AMPPS/www/diaravel/app/Traits/HasArchives.php",
 		"/Applications/AMPPS/www/diaravel/app/Http/Controllers/AboutController.php",
 		"/Applications/AMPPS/www/diaravel/apijson/social_network.json",
 		"/Applications/AMPPS/www/diaravel/resources/views/social_networks/table.blade.php",
@@ -659,7 +670,6 @@
 		"/Applications/AMPPS/www/diaravel/apijson/about.json",
 		"/Applications/AMPPS/www/diaravel/resources/views/about/index.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/about/show.blade.php",
-		"/Applications/AMPPS/www/diaravel/config/filesystems.php",
 		"/Applications/AMPPS/www/diaravel/app/Models/Archive.php",
 		"/Applications/AMPPS/www/diaravel/database/migrations/2018_09_01_130100_create_abouts_table.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravelcollective/html/src/Eloquent/FormAccessible.php",
@@ -697,7 +707,6 @@
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Foundation/Bus/Dispatchable.php",
 		"/Applications/AMPPS/www/diaravel/app/Events/CommentCreated.php",
 		"/Applications/AMPPS/www/diaravel/app/Providers/EventServiceProvider.php",
-		"/Applications/AMPPS/www/diaravel/config/app.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Queue/SerializesModels.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Queue/SerializesAndRestoresModelIdentifiers.php",
 		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Foundation/Events/Dispatchable.php",
@@ -731,17 +740,11 @@
 		"/Applications/AMPPS/www/diaravel/resources/views/vendor/pagination/simple-bootstrap-4.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/contact.blade.php",
 		"/Applications/AMPPS/www/diaravel/resources/views/vendor/pagination/simple-default.blade.php",
-		"/Applications/AMPPS/www/diaravel/app/Models/Category.php",
-		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_203703_create_categories_table.php",
-		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_20_203721_create_tags_table.php",
-		"/Applications/AMPPS/www/diaravel/resources/views/posts/index.blade.php",
-		"/Applications/AMPPS/www/diaravel/vendor/fzaninotto/faker/src/Faker/Generator.php",
-		"/Applications/AMPPS/www/diaravel/database/migrations/2018_07_21_154434_create_comments_table.php",
-		"/Applications/AMPPS/www/diaravel/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php"
+		"/Applications/AMPPS/www/diaravel/app/Models/Category.php"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -755,6 +758,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"infyomlabs",
+			"public",
+			"archive",
+			"public",
 			"Buscar",
 			"publado",
 			"es_ES",
@@ -878,11 +885,7 @@
 			"response",
 			"publiceado",
 			"_token",
-			"body",
-			"textarea",
-			"required",
-			"nombre",
-			"name"
+			"body"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -966,6 +969,18 @@
 				"resources/views/layouts/app.blade.php"
 			],
 			[
+				"hasAr",
+				"app/Traits/HasArchives.php"
+			],
+			[
+				"web",
+				"routes/web.php"
+			],
+			[
+				"postcon",
+				"app/Http/Controllers/PostController.php"
+			],
+			[
 				"profile",
 				"app/Http/Controllers/ProfileController.php"
 			],
@@ -976,10 +991,6 @@
 			[
 				"menu",
 				"resources/views/layouts/menu.blade.php"
-			],
-			[
-				"web",
-				"routes/web.php"
 			],
 			[
 				"routesweb",
@@ -1000,10 +1011,6 @@
 			[
 				"modelsSocial",
 				"app/Models/SocialNetwork.php"
-			],
-			[
-				"postcon",
-				"app/Http/Controllers/PostController.php"
 			],
 			[
 				"aboutcon",
@@ -1308,10 +1315,6 @@
 			[
 				"FrontendController",
 				"app/Http/Controllers/FrontendController.php"
-			],
-			[
-				"hasAr",
-				"app/Traits/HasArchives.php"
 			],
 			[
 				"postsfield",
